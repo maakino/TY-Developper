@@ -1,0 +1,15 @@
+.nav{
+
+    &List{
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+        &-item{
+            text-align: center;
+            a{
+                color: var(--txt-primary-color);
+            }
+        }
+    }
+
+}

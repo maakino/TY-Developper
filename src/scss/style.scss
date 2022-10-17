@@ -3,13 +3,19 @@
 @import 'typo/font';
 //base
 @import 'base/reset';
-@import 'base/body';
 @import 'base/base';
+@import 'base/links';
+
 //layout
 @import 'layout/header';
 @import 'layout/footer';
 //page
 @import 'section/page';
+//component
+@import 'component/nav';
+
+//
+
 
 
 

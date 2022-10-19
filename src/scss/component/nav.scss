@@ -1,15 +1,19 @@
-.nav{
+.nav {
+  width: 100%;
+  padding-top: 1.7rem;
+  margin-top: 1.7rem;
 
-    &List{
-        display: flex;
-        flex-direction: column;
-        gap: 3.5rem;
-        &-item{
-            text-align: center;
-            a{
-                color: var(--txt-primary-color);
-            }
-        }
+  border-top: 1px solid var(--links-primary-color);
+
+  &List {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    &-item {
+      text-align: center;
+      a {
+        color: var(--txt-primary-color);
+      }
     }
-
+  }
 }

@@ -51,19 +51,21 @@
 
   <body>
     <header class="header">
-      <div class="header-burger">
-        <img src="img/icons/burger.svg" alt="Icone pour ouvrir le menue mobile" width="44" height="44" />
-      </div>
-      <div class="js-toggleNav header-mobile">
+      <img
+      class="header-logo"
+      src="img/logo/logo.png"
+      alt="Logo de l'entreprise TY developper"
+      width="199"
+      height="42"
+    />
         <img
-          class="header-logo"
-          src="img/logo/logo.png"
-          alt="Logo de l'entreprise TY developper"
-          width="199"
-          height="42"
+          class="js-burger"
+          src="img/icons/burger.svg"
+          alt="Icone pour ouvrir le menue mobile"
+          width="44"
+          height="44"
         />
-
-        <nav class="nav">
+        <nav class="nav js-toggleNav hiddenMobile">
           <ul class="navList">
             <li class="navList-item"><a href="#home">Accueil</a></li>
             <li class="navList-item">
@@ -75,7 +77,7 @@
           </ul>
         </nav>
 
-        <ul class="header-social">
+        <ul class="header-social js-toggleNav hiddenMobile">
           <li>
             <a href="#"
               ><img
@@ -114,11 +116,11 @@
             /></a>
           </li>
         </ul>
-      </div>
     </header>
 
     <main></main>
 
     <footer></footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

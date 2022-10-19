@@ -6,6 +6,14 @@
   align-items: center;
   padding: 1rem 1.4rem;
   flex-wrap: wrap;
+  @include media(large) {
+    flex-wrap: nowrap;
+    height: 11.3rem;
+  }
+  /* burger */
+  img:nth-child(2) {
+    display: none;
+  }
 
   &-social {
     display: flex;
@@ -13,6 +21,10 @@
     justify-content: center;
     width: 100%;
     margin-top: 3.5rem;
+    @include media(large) {
+      width: initial;
+      margin: 0;
+    }
   }
   &-mobile {
     display: none;
@@ -21,6 +33,9 @@
 
 .hiddenMobile {
   display: none;
+  @include media(large) {
+    display: flex;
+  }
 }
 
 .nav-open {

@@ -2,13 +2,21 @@
   width: 100%;
   padding-top: 1.7rem;
   margin-top: 1.7rem;
-
   border-top: 1px solid var(--links-primary-color);
+  @include media (large){
+    border: none;
+    margin: 0;
+    padding: 0;
+    width:inherit;
+  }
 
   &List {
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
+    @include media (large){
+      flex-direction: row;
+    }
     &-item {
       text-align: center;
       a {

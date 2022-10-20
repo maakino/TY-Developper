@@ -1,18 +1,25 @@
 .header {
   background-color: var(--background-primary-color);
-  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 1.4rem;
-  flex-wrap: wrap;
-  @include media(large) {
-    flex-wrap: nowrap;
-    height: 11.3rem;
+width: 100vw;
+box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+
+  &Content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include media(medium) {
+      flex-wrap: nowrap;
+      height: 11.3rem;
+    }
   }
+
   /* burger */
   img:nth-child(2) {
-    display: none;
+    @include media(medium) {
+      display: none;
+    }
   }
 
   &-social {
@@ -21,7 +28,7 @@
     justify-content: center;
     width: 100%;
     margin-top: 3.5rem;
-    @include media(large) {
+    @include media(medium) {
       width: initial;
       margin: 0;
     }
@@ -33,7 +40,7 @@
 
 .hiddenMobile {
   display: none;
-  @include media(large) {
+  @include media(medium) {
     display: flex;
   }
 }

@@ -1,18 +1,36 @@
 :root {
   --background-primary-color: #fffffe;
-  --background-secondary-color: #F0F6FB;
-  --txt-primary-color: #5F6C7B;
-  --txt-secondary-color: #FFFFFE;
+  --background-secondary-color: #f0f6fb;
+  --txt-primary-color: #5f6c7b;
+  --txt-secondary-color: #fffffe;
   --title-primary-color: #094067;
-  --title-secondary-color: #3FB3D1;
-  --links-primary-color: #FF5677;
+  --title-secondary-color: #3fb3d1;
+  --links-primary-color: #ff5677;
 }
-html{
+html {
   font-size: 62.5%;
 }
-body{
+body {
   font-size: 1.4em;
 }
 
+.max-w {
+  max-width: 1920px;
+  margin: auto;
+}
 
+.padding {
+  padding: 2rem 1.1rem;
 
+  @include media(small) {
+    padding: 2rem 2.7rem;
+  }
+
+  @include media(medium) {
+    padding: 0 2.7rem;
+  }
+
+  @include media(extra-large) {
+    padding: 0 24.7rem;
+  }
+}

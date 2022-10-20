@@ -7,9 +7,11 @@
   --title-secondary-color: #3fb3d1;
   --links-primary-color: #ff5677;
 }
+
 html {
   font-size: 62.5%;
 }
+
 body {
   font-size: 1.4em;
 }
@@ -33,4 +35,13 @@ body {
   @include media(extra-large) {
     padding: 0 24.7rem;
   }
+}
+
+.txt{
+  color: var(--txt-primary-color);
+  font-family: "Rubik";
+}
+
+.title{
+  font-family: "Calibri";
 }

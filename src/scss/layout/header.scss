@@ -1,7 +1,7 @@
 .header {
   background-color: var(--background-primary-color);
-width: 100vw;
-box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+  width: 100vw;
+  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
 
   &Content {
     display: flex;
@@ -28,11 +28,13 @@ box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
     justify-content: center;
     width: 100%;
     margin-top: 3.5rem;
+
     @include media(medium) {
       width: initial;
       margin: 0;
     }
   }
+
   &-mobile {
     display: none;
   }
@@ -40,6 +42,7 @@ box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
 
 .hiddenMobile {
   display: none;
+
   @include media(medium) {
     display: flex;
   }

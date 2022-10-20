@@ -1,0 +1,29 @@
+.footer {
+  background-color: var(--background-secondary-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  &Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include media(medium) {
+      padding: 3rem 0;
+    }
+    gap: 2.8rem;
+    p {
+      font-size: 2rem;
+      @include media(medium) {
+        font-size: 2.5rem;
+      }
+      &:last-child {
+        font-size: 1.7rem;
+        @include media(medium) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

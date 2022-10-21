@@ -2,6 +2,11 @@
   background-color: var(--background-primary-color);
   width: 100vw;
   box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
 
   &Content {
     display: flex;

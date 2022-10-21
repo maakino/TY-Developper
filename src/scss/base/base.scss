@@ -15,7 +15,9 @@ html {
 body {
   font-size: 1.4em;
 }
-
+main{
+  margin-top: 7.4rem;
+}
 .max-w {
   max-width: 1920px;
   margin: auto;
@@ -44,4 +46,14 @@ body {
 
 .title{
   font-family: "Calibri";
+}
+h1{
+  font-family: "Calibri";
+  font-weight: bold;
+  font-size: 3.6rem;
+  color: var(--title-secondary-color);
+  span{
+    color: var(--txt-primary-color);
+
+  }
 }

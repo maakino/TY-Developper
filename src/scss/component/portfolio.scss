@@ -1,0 +1,28 @@
+.portfolio{
+    background-color: var(--background-secondary-color);
+    &Content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.0rem;
+    }
+    &-gallery{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 32.9rem;
+            height: auto;
+    }
+}
+a{
+    img{
+        filter: invert(99%) sepia(14%) saturate(2%) hue-rotate(205deg) brightness(117%) contrast(100%);
+    }
+}
+.btn{
+    margin: auto;
+}
+}

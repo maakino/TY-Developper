@@ -42,14 +42,22 @@ main{
 .txt{
   color: var(--txt-primary-color);
   font-family: "Rubik";
+  font-size: 18px;
 }
 
 .title{
   font-family: "Calibri";
+  font-weight: bold;
 }
+.title-secondary{
+  color: var(--title-primary-color);
+  font-size: 2.9rem;
+}
+
+
+
 h1{
   font-family: "Calibri";
-  font-weight: bold;
   font-size: 3.6rem;
   color: var(--title-secondary-color);
   span{

@@ -1,0 +1,17 @@
+.contact {
+  background-color: var(--background-primary-color);
+  text-align: center;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    h3 {
+      font-weight: 400;
+      text-align: left;
+    }
+    button[type="submit"] {
+        border: none;
+        margin: auto;
+    }
+  }
+}

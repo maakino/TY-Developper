@@ -1,0 +1,25 @@
+.services{
+    background-color: var(--background-primary-color);
+    text-align: center;
+    &Content{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    &Info{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        align-items: center;
+        &-card{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+            img{
+                width: 4rem;
+            }
+        }
+    }
+}

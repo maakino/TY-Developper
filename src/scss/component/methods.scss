@@ -1,0 +1,15 @@
+.methods{
+    background-color: var(--background-secondary-color);
+    text-align: center;
+    &Content{
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+    &-block{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,25 @@
+.methods-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    h4{
+        font-size: 2rem;
+        color: var(--txt-primary-color);
+    }
+    p:first-child{
+        background-color: var(--title-primary-color);
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        width: 47px;
+        height: 47px;
+        color: var(--background-primary-color);
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    p:last-child{
+        height: 7.9rem;
+    }
+}

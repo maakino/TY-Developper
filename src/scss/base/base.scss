@@ -27,7 +27,7 @@ main{
   padding: 2rem 1.1rem;
 
   @include media(small) {
-    padding: 2rem 2.7rem;
+    padding: 3rem 2.7rem;
   }
 
   @include media(medium) {
@@ -58,7 +58,14 @@ h1, h2, h3, .title{
 
 h1{
   font-size: 3.6rem;
+  line-height: initial;
   color: var(--title-secondary-color);
+  @include media (small){
+    font-size: 4.6rem;
+  }
+  @include media (large){
+    font-size: 6.4rem;
+  }
   span{
     color: var(--txt-primary-color);
 

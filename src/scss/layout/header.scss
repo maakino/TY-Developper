@@ -7,7 +7,6 @@
   left: 0;
   right: 0;
 
-
   &Content {
     display: flex;
     justify-content: space-between;
@@ -15,8 +14,12 @@
     flex-wrap: wrap;
 
     @include media(medium) {
+      justify-content: space-around;
       flex-wrap: nowrap;
       height: 11.3rem;
+    }
+    @include media(extra-large) {
+      justify-content: space-between;
     }
   }
 

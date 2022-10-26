@@ -1,20 +1,33 @@
 .portfolio{
     background-color: var(--background-secondary-color);
+
     &Content{
         display: flex;
         flex-direction: column;
         text-align: center;
         gap: 1.0rem;
+        @include media (large){
+            gap: 2.3rem;
+         }
     }
+
     &-gallery{
         display: flex;
         flex-direction: column;
         gap: 2.5rem;
         justify-content: center;
         align-items: center;
+        @include media (large){
+            flex-direction: row;
+            gap: 2.3rem;
+        }
         img{
             width: 32.9rem;
             height: auto;
+            @include media (large){
+                width: 41.4rem;
+                margin-bottom: 2rem;
+             }
     }
 }
 .btn{

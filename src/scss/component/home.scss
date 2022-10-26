@@ -9,7 +9,7 @@
     }
     @include media (medium){
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
       padding: 5.0rem 2.7rem;
       text-align: left;
     }
@@ -29,7 +29,6 @@
       }
     @include media (medium){
       width: 46.1rem;
-
     }
       p{
         font-size: 1.8rem;

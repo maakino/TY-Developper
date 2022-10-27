@@ -12,11 +12,18 @@
         flex-direction: column;
         gap: 2.5rem;
         align-items: center;
+        @include media(large){
+            flex-direction: row;
+            gap: 11.0rem;
+        }
         &-card{
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
             align-items: center;
+            @include media(large){
+                width: 36.0rem;
+            }
             img{
                 width: 4rem;
             }

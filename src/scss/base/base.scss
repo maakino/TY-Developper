@@ -81,4 +81,7 @@ h3{
 }
 .margin-b-smallTitle{
   margin-bottom: 1.5rem;
+  @include media (large){
+    margin-bottom: 3rem;
+  }
 }

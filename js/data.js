@@ -1,7 +1,7 @@
 const portfolio = [
     {
         title: "Devis power",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam egestas adipiscing et in iaculis. Non tellus, nisl ipsum tincidunt sed faucibus a, eu.",
+        desc: "Design de la maquette graphique <br> Intégration Front-end <br> Technologies : React / SASS / Git  ",
         url_site: "https://www.devispower.fr/",
         url_maquette: null,
         img_src: "img/portfolio/devisPower.jpg",
@@ -9,8 +9,8 @@ const portfolio = [
     },
 
     {
-        title: "Tydevelopper",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam egestas adipiscing et in iaculis. Non tellus, nisl ipsum tincidunt sed faucibus a, eu.",
+        title: "Cuisine créole",
+        desc: "Maquette entrainement débutant <br> Logicièle utiliseé : Figma",
         url_site: null,
         url_maquette:"img/portfolio/cuisine-créole.pdf" ,
         img_src: "img/portfolio/test.jpg",
@@ -18,8 +18,8 @@ const portfolio = [
     },
 
     {
-        title: "Cuisine créole",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam egestas adipiscing et in iaculis. Non tellus, nisl ipsum tincidunt sed faucibus a, eu.",
+        title: "Tydevelopper",
+        desc: "Design de la maquette graphique <br> Intégration Front-end <br> Technologies : React / SASS / Git ",
         url_site: null,
         url_maquette:"img/portfolio/Tydevelopper.pdf" ,
         img_src: "img/portfolio/Tydevelopper.jpg",

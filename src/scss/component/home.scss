@@ -57,12 +57,12 @@
     img {
       width: 2.6rem;
       height: auto;
-      @include media (small){
+     /*  @include media (small){
         width: 3.0rem;
       }
       @include media(medium){
         width: 3rem;
-      }
+      } */
     }
   }
   &-btn {

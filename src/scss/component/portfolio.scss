@@ -18,19 +18,25 @@
         justify-content: center;
         align-items: center;
         @include media (large){
+            flex-direction: column;
+            gap: 2.3rem;
+        }
+        @include media (extra-large){
             flex-direction: row;
             gap: 2.3rem;
         }
         img{
             width: 32.9rem;
             height: auto;
-            @include media (medium){
+            @include media (small){
                 width: 41.4rem;
                 margin-bottom: 2rem;
              }
-            @include media (large){
+             @include media (large){
+                width: 55.4rem;
+             }
+            @include media (extra-large){
                 width: 41.4rem;
-                margin-bottom: 2rem;
              }
     }
 }

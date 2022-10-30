@@ -17,7 +17,10 @@
         }
         @include media(large){
             flex-direction: row;
-            gap: 11.0rem;
+            gap: 6rem;
+        }
+        @include media(extra-large){
+            gap: 10.0rem;
         }
         &-card{
             display: flex;

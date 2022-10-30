@@ -23,6 +23,9 @@
             flex-direction: row;
         }
         @include media (large){
+            gap: 6rem;
+        }
+        @include media (extra-large){
             gap: 9.6rem;
         }
     }

@@ -28,17 +28,14 @@
         font-size: 3.6rem;
     }
     &-close {
+        cursor: pointer;
       margin-left: auto;
       filter: invert(52%) sepia(27%) saturate(1898%) hue-rotate(308deg) brightness(96%) contrast(112%);
-
-
     }
     &-img{
         width: 100%;
         margin: auto;
         height: auto;
-      
-
         @include media (large){
             width: initial;
         }

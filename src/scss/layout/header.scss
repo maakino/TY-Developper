@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   right: 0;
-z-index: 100;
+  z-index: 100;
   &Content {
     display: flex;
     justify-content: space-between;
@@ -36,7 +36,6 @@ z-index: 100;
     justify-content: center;
     width: 100%;
     margin-top: 3.5rem;
-
     @include media(medium) {
       width: initial;
       margin: 0;
@@ -49,6 +48,15 @@ z-index: 100;
 }
 
 .hiddenMobile {
+  img {
+    filter: invert(43%) sepia(7%) saturate(1152%) hue-rotate(172deg)
+      brightness(91%) contrast(85%);
+    &:hover {
+      filter: invert(54%) sepia(76%) saturate(3306%) hue-rotate(316deg)
+        brightness(100%) contrast(102%);
+      transition: 0.2s;
+    }
+  }
   display: none;
 
   @include media(medium) {

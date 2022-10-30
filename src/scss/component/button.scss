@@ -14,8 +14,24 @@
 .btn-primary{
     background: var(--links-primary-color);
     color: var(--background-primary-color);
+    &:hover{
+      transition: .2s;
+      color:var(--links-primary-color) ;
+      background-color: var(--background-primary-color);
+      img{
+        filter: invert(54%) sepia(76%) saturate(3306%) hue-rotate(316deg) brightness(100%) contrast(102%);
+      }
+    }
 }
 .btn-secondary{
     border: 0.1rem solid var(--links-primary-color);
     color: var(--links-primary-color);
+    &:hover{
+      border: none;
+      transition: .2s;
+    }
+    img{
+      filter: invert(54%) sepia(76%) saturate(3306%) hue-rotate(316deg) brightness(100%) contrast(102%);
+
+    }
 }

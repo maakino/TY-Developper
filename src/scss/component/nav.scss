@@ -36,6 +36,11 @@
       text-align: center;
       a {
         color: var(--txt-primary-color);
+        &:hover{
+      color: var(--links-primary-color);
+      transition: .2s;
+
+        }
       }
     }
   }

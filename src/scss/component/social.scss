@@ -2,4 +2,11 @@
     display: flex;
     gap: 3.5rem;
     justify-content: center;
+    img {
+        filter: invert(43%) sepia(7%) saturate(1152%) hue-rotate(172deg) brightness(91%) contrast(85%);
+      &:hover {
+        filter: invert(46%) sepia(83%) saturate(1927%) hue-rotate(317deg) brightness(102%) contrast(101%);
+        transition: 0.2s;
+      }
+}
 }

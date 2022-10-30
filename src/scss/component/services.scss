@@ -12,6 +12,9 @@
         flex-direction: column;
         gap: 2.5rem;
         align-items: center;
+        @include media(medium){
+            gap: 5.5rem;
+        }
         @include media(large){
             flex-direction: row;
             gap: 11.0rem;
@@ -21,7 +24,7 @@
             flex-direction: column;
             gap: 1.5rem;
             align-items: center;
-            @include media(large){
+            @include media(small){
                 width: 36.0rem;
             }
             img{

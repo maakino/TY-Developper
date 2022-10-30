@@ -29,8 +29,12 @@
     }
     p{
         font-weight: 300;
+        @include media (large){
+          font-size: 3.2rem;  @include media (large){
         font-size: 3.2rem;
 
+      }
+        }
     }
   }
 }

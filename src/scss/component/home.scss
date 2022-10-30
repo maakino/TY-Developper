@@ -36,6 +36,9 @@
           font-size: 2.2rem;
         }
     @include media (medium){
+      font-size: 2rem;
+    }
+    @include media (large){
       font-size: 2.4rem;
     }
       }
@@ -58,7 +61,7 @@
         width: 3.0rem;
       }
       @include media(medium){
-        width: 3.5rem;
+        width: 3rem;
       }
     }
   }
@@ -79,7 +82,7 @@
       width: 30.0rem;
     }
     @include media (medium){
-      width: 40.0rem;
+      width: 35.0rem;
     }
     @include media(extra-large){
       width: 52.2rem;

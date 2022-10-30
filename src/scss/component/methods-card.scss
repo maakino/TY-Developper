@@ -3,6 +3,16 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    @include media (small){
+        width: 34.4rem;
+        margin: auto;
+    }
+    @include media (medium){
+        width: 27rem;
+    }
+    @include media (large){
+        width: 34.4rem;
+    }
     h4{
         font-size: 2rem;
         color: var(--txt-primary-color);

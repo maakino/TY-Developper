@@ -8,11 +8,22 @@
         display: flex;
         flex-direction: column;
         gap: 3.5rem;
+        @include media (large){
+            justify-content: center;
+            align-items: center;
+        }
+
     }
     &-block{
         display: flex;
         flex-direction: column;
         gap: 2.5rem;
         text-align: center;
+        @include media (medium){
+            flex-direction: row;
+        }
+        @include media (large){
+            gap: 9.6rem;
+        }
     }
 }

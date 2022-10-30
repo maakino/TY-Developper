@@ -24,6 +24,10 @@
         img{
             width: 32.9rem;
             height: auto;
+            @include media (medium){
+                width: 41.4rem;
+                margin-bottom: 2rem;
+             }
             @include media (large){
                 width: 41.4rem;
                 margin-bottom: 2rem;

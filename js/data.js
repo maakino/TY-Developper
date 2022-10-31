@@ -21,7 +21,7 @@ const portfolio = [
         title: "Tydevelopper",
         desc: "Design de la maquette graphique <br> Intégration Front-end <br> Technologies : React / SASS / Git ",
         url_site: null,
-        url_maquette:"img/portfolio/Tydevelopper.pdf" ,
+        url_maquette:"img/portfolio/tydevelopper.pdf" ,
         img_src: "img/portfolio/Tydevelopper.jpg",
         type: "maquette"
     }

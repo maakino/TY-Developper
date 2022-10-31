@@ -38,7 +38,10 @@ main{
 }
 
 h1, h2, h3, .title{
-  font-family: "Calibri";
+  font-family: "Calibri", Arial, Helvetica, sans-serif;
+}
+p{
+  font-family: "Rubik", Arial, Helvetica, sans-serif !important;
 }
 .txt{
   color: var(--txt-primary-color);

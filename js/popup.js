@@ -5,7 +5,7 @@ function createPopup(index){
 const data = portfolio[index];
 
 const popin = `
-<div class = "popin" id="popin_${index}" onclick = "closePopin(${index})">
+<div class = "popin" id="popin_${index}" >
 
 <div class="popinContent">
     <img src="img/icons/close.svg" class="popinContent-close" onclick = "closePopin(${index})" width= "30" height="auto">

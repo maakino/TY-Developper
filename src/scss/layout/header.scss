@@ -69,6 +69,13 @@
   @include media(medium) {
     display: flex;
   }
+  
+  li{
+    transition: 0.9s;
+    &:hover{
+        transform: scale(1.1);
+    }
+  }
 }
 
 .nav-open {

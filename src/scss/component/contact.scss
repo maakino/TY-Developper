@@ -6,12 +6,15 @@
     flex-direction: column;
     gap: 3.5rem;
     @include media (small){
-      width: 65.2rem;
+      width: 59rem;
       margin: auto;
     }
+    @include media (medium){
+      width: 65.2rem;
+    }
     h3 {
-      font-weight: 400;
       text-align: left;
+      color: var(--txt-primary-color);
     }
     button[type="submit"] {
         border: none;

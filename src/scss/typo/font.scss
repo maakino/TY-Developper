@@ -1,40 +1,4 @@
 font-face {
-    font-family: "Calibri";
-    src: url("../font/calibri/calibri-regular.ttf");
-    font-weight: 400;
-    font-display: swap;
-}
-
-font-face {
-    font-family: "Calibri";
-    src: url("../font/calibri/calibri-bold.ttf");
-    font-weight: 800;
-    font-display: swap;
-}
-
-/* rubik */
-font-face {
-    font-family: "Rubik";
-    src: url("../font/rubik/Rubik-Light.ttf");
-    font-weight: 300;
-    font-display: swap;
-}
-
-font-face {
-    font-family: "Rubik";
-    src: url("../font/rubik/Rubik-regular.ttf");
-    font-weight: 400;
-    font-display: swap;
-}
-
-font-face {
-    font-family: "Rubik";
-    src: url("../font/rubik/Rubik-Medium.ttf");
-    font-weight: 500;
-    font-display: swap;
-}
-
-font-face {
     font-family: "Raleway";
     src: url("../../../raleway/Raleway-Medium.ttf");
     font-weight: 400;
@@ -51,6 +15,24 @@ font-face {
     font-family: "Raleway";
     src: url("../../../raleway/Raleway-Bold.ttf");
     font-weight: 700;
+    font-display: swap;
+}
+font-face {
+    font-family: "Raleway";
+    src: url("../../../raleway/Raleway-Black.ttf");
+    font-weight: 800;
+    font-display: swap;
+}
+font-face {
+    font-family: "Lato";
+    src: url("../../../font/lato/Lato-Regular.ttf");
+    font-weight: 800;
+    font-display: swap;
+}
+font-face {
+    font-family: "Lato";
+    src: url("../../../font/lato/Lato-Medium.ttf");
+    font-weight: 800;
     font-display: swap;
 }
 

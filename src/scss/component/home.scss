@@ -20,6 +20,19 @@
       padding: 6rem 24.7rem;
       justify-content: space-between;
     }
+    &__slogan{
+      hr{
+        background-color: black;
+        width: 150px;
+        height: 4px;
+        float: left;
+        margin: 0;
+        @include media (large){
+          width: 170px;
+          }
+       }
+    }
+
     &-info {
       display: flex;
       flex-direction: column;

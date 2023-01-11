@@ -4,11 +4,13 @@
   margin-top: 1.7rem;
   border-top: 1px solid var(--links-primary-color);
   z-index: 100;
+  animation: showNav 0.9s;
   @include media(medium) {
     border: none;
     margin: 0;
     padding: 0;
     width: inherit;
+    animation:none;
   }
   &::before {
     position: absolute;
@@ -35,7 +37,7 @@
     &-item {
       text-align: center;
       a {
-        color: var(--txt-primary-color);
+        color: var(--title-secondary-color);
         &:hover{
       color: var(--links-primary-color);
       transition: .2s;
@@ -43,5 +45,15 @@
         }
       }
     }
+  }
+}
+@keyframes showNav {
+  0%{
+    opacity: 0;
+    height: 84px;
+  }
+  100%{
+    opacity: 1;
+    height: 243px;
   }
 }

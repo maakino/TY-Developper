@@ -1,10 +1,10 @@
 :root {
-  --background-primary-color: #fffffe;
+  --background-primary-color: #FBFBFB;
   --background-secondary-color: #f0f6fb;
-  --txt-primary-color: #5f6c7b;
-  --txt-secondary-color: #fffffe;
+  --txt-primary-color: #5C6B73;
+  --txt-secondary-color: #FBFBFB;
   --title-primary-color: #094067;
-  --title-secondary-color: #3fb3d1;
+  --title-secondary-color: #348AA7;
   --links-primary-color: #ff5677;
   scroll-behavior: smooth;
 }
@@ -38,19 +38,17 @@ main{
 }
 
 h1, h2, h3, .title{
-  font-family: "Calibri", Arial, Helvetica, sans-serif;
+  font-family: "Raleway";
+  font-weight: 800;
+  color: var(--title-primary-color);
+
 }
 p{
-  font-family: "Rubik", Arial, Helvetica, sans-serif !important;
+  font-family: "Lato" !important;
 }
 .txt{
   color: var(--txt-primary-color);
-  font-family: "Rubik";
-  font-size: 18px;
-}
-
-.title{
-  font-weight: bold;
+  font-size: 1.8rem;
 }
 .title-secondary{
   color: var(--title-primary-color);

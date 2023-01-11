@@ -21,6 +21,9 @@
     text-align: center;
     gap: 2rem;
     border-radius: 0.8rem;
+    p{
+      line-height: 2;
+    }
     @include media (large){
         width: 30%;
     }

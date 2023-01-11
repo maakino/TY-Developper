@@ -1,38 +1,63 @@
-.services{
-    background-color: var(--background-primary-color);
-    text-align: center;
-    &Content{
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        align-items: center;
+.services {
+  background-color: var(--background-primary-color);
+  text-align: center;
+  &Content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  &Info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+    align-self: center;
+    justify-self: center;
+    @include media(small) {
+      grid-template-columns: repeat(1, 600px);
     }
-    &Info{
-        display: flex;
-        flex-direction: column;
-        gap: 2.5rem;
-        align-items: center;
-        @include media(medium){
-            gap: 5.5rem;
-        }
-        @include media(large){
-            flex-direction: row;
-            gap: 6rem;
-        }
-        @include media(extra-large){
-            gap: 10.0rem;
-        }
-        &-card{
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            align-items: center;
-            @include media(small){
-                width: 36.0rem;
-            }
-            img{
-                width: 4rem;
-            }
-        }
+    @include media(medium) {
+      grid-template-columns: repeat(1, 600px);
     }
+    @include media(large) {
+      grid-template-columns: repeat(2, 600px);
+    }
+    &-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      height: 28.9rem;
+      box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, 0.055);
+      @include media(medium) {
+        width: 60.4rem;
+        height: 28.9rem;
+      }
+      align-items: center;
+      background-color: var(--background-secondary-color);
+      border-radius: 0.6rem;
+      @include media(small) {
+        min-width: 36rem;
+      }
+      h3 {
+        font-size: 2.6rem;
+        @include media (medium){
+            font-size: 4rem;
+        }
+        font-weight: 900;
+        color: var(--txt-primary-color);
+      }
+      p {
+        font-size: 2rem;
+        max-width: 90%;
+        font-weight: 500;
+        color: var(--txt-primary-color);
+
+      }
+      img {
+        width: 5rem;
+      }
+    }
+  }
 }

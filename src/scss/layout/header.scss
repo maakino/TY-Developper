@@ -18,9 +18,11 @@
       flex-wrap: nowrap;
       height: 11.3rem;
     }
+
     @include media(extra-large) {
       justify-content: space-between;
     }
+
   }
 
   /* burger */

@@ -23,29 +23,25 @@
       grid-template-columns: repeat(2, 600px);
     }
     &-card {
+
+      text-align: left;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-start;
+      align-items: flex-start;
       gap: 1.5rem;
-      height: 28.9rem;
-      box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, 0.055);
       @include media(medium) {
         width: 60.4rem;
-        height: 28.9rem;
+
       }
-      align-items: center;
-      background-color: var(--background-secondary-color);
       border-radius: 0.6rem;
       @include media(small) {
         min-width: 36rem;
       }
       h3 {
         font-size: 2.6rem;
-        @include media (medium){
-            font-size: 4rem;
-        }
-        font-weight: 900;
+
+        font-weight: 500;
         color: var(--txt-primary-color);
       }
       p {

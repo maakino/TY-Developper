@@ -1,5 +1,7 @@
 .footer {
-  background-color: var(--background-secondary-color);
+  background-color: var(--background-primary-color);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+
   position: relative;
   bottom: 0;
   left: 0;
@@ -21,7 +23,7 @@
       &:last-child {
         font-size: 1.7rem;
         @include media(medium) {
-          font-size: 2rem;
+          font-size: 1.8rem;
         }
       }
     }

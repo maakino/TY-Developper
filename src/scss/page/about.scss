@@ -2,11 +2,11 @@
   padding-top: 5.6rem;
   padding-bottom: 5.6rem;
   h1 {
-    font-size: 4.8rem;
+    font-size: clamp(1.8rem, 2.4rem + 2.5vw, 4.8rem);
     margin-bottom: 5.6rem;
     text-align: center;
-    @include media (large){
-        text-align: left;
+    @include media(large) {
+      text-align: left;
     }
   }
   &__content {
@@ -15,27 +15,60 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 3.2rem;
+
     @include media(large) {
       flex-direction: row;
-      gap: 6.3rem;
+      justify-content: space-between;
+      gap: 0;
     }
     &Txt {
       display: flex;
       flex-direction: column;
       gap: 4.3rem;
+      @include media (small){
+        width: 90%;
+        margin: auto;
+      }
+      @include media(large) {
+        width: 50%;
+        margin: 0;
+      }
       span {
         h2 {
-          margin-bottom: 1.6rem;
-          font-size: 2.4rem;
+          font-size: 2rem;
+          margin-bottom: 1.8rem;
         }
         p {
           line-height: 1.8;
           font-size: 2rem;
+          word-wrap: break-word;
         }
         strong {
           font-weight: 600;
         }
+      }
+      a {
+        margin: auto;
+        @include media(large) {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &__ceo {
+    margin: auto;
+    @include media(large) {
+      margin: 0;
+      width: 38.9rem;
+      position:sticky ;
+      right: 0;
+      top: 0;
+      img {
+        width: 38.9rem;
+        height: auto;
       }
     }
   }

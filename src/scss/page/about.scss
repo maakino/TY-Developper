@@ -6,6 +6,9 @@
     margin-bottom: 5.6rem;
     text-align: center;
     @include media(large) {
+      text-align: center;
+    }
+    @include media(extra-large) {
       text-align: left;
     }
   }
@@ -19,6 +22,11 @@
     gap: 3.2rem;
 
     @include media(large) {
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 0;
+    }
+    @include media(extra-large) {
       flex-direction: row;
       justify-content: space-between;
       gap: 0;

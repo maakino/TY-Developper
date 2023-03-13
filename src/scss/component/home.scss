@@ -40,9 +40,6 @@
       @include media (small){
         gap: 1.5rem;
       }
-    @include media (medium){
-      width: 46.1rem;
-    }
       p{
         font-size: 1.8rem;
         @include media (small){

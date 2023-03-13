@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     width: inherit;
-    animation:none;
+    animation: none;
   }
   &::before {
     position: absolute;
@@ -22,7 +22,7 @@
     height: 20px;
     border-radius: 50%;
     background-color: var(--background-primary-color);
-    @include media (medium){
+    @include media(medium) {
       display: none;
     }
   }
@@ -37,22 +37,24 @@
     &-item {
       text-align: center;
       a {
-        color: var(--title-secondary-color);
-        &:hover{
-      color: var(--links-primary-color);
-      transition: .2s;
-
+        font-family: "Montserrat";
+        color: var(--txt-primary-color);
+        font-weight: 400;
+        font-size: clamp(1.9rem, 5vw, 2rem);
+        &:hover {
+          color: var(--links-primary-color);
+          transition: 0.2s;
         }
       }
     }
   }
 }
 @keyframes showNav {
-  0%{
+  0% {
     opacity: 0;
     height: 84px;
   }
-  100%{
+  100% {
     opacity: 1;
     height: 243px;
   }

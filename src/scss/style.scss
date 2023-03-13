@@ -16,10 +16,11 @@
 //section
 @import 'section/page';
 @import 'section/websiteDef';
+@import 'section/home';
+
 //component
 @import 'component/nav';
 @import 'component/social';
-@import 'component/home';
 @import 'component/button';
 @import 'component/portfolio';
 @import 'component/slogan';
@@ -32,7 +33,10 @@
 @import 'component/cardHover';
 
 
-//
+//class-utils
+@import 'class-utils/title';
+@import 'class-utils/txt';
+
 
 
 

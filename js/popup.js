@@ -15,6 +15,8 @@ const popin = `
     <h2 class = "title title-secondary">${data.title}</h2>
 
     <p class ="txt">${data.desc}</p>
+  <p class="txt"> Technologie : ${data.techno} </p>
+
 
     <a href="${data.type=="site"?data.url_site:data.url_maquette}" class="btn btn-primary" target="_blank">
     ${data.type=="site"?"Voir le site":"Voir la maquette"}

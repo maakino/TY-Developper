@@ -1,0 +1,46 @@
+.lastProjects {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16rem;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    @include media(large) {
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 8.8rem;
+      &:nth-child(2n + 1) {
+        flex-direction: row;
+      }
+    }
+    img {
+      @include media(large) {
+        width: 62.8rem;
+        height: 36.3rem;
+      }
+    }
+    &Info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      .title-group {
+        align-items: flex-start;
+        margin: 0;
+      }
+      h2 {
+        font-size: clamp(3.6rem, 5vw, 6.4rem);
+      }
+      a {
+        color: var(--links-primary-color);
+        font-weight: 400;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

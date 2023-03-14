@@ -1,6 +1,7 @@
 .popin {
   position: fixed;
   top: 0;
+  z-index: 1000;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -25,7 +26,7 @@
       line-height: 2;
     }
     @include media (large){
-        width: 30%;
+       width: fit-content;
     }
     h2{
         font-size: 3.6rem;

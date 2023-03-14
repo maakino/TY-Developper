@@ -1,10 +1,10 @@
 //Abstract
 @import 'mixins/mixins';
 @import 'typo/font';
+
 //base
 @import 'base/reset';
 @import 'base/base';
-@import 'base/links';
 
 //layout
 @import 'layout/header';
@@ -12,23 +12,26 @@
 
 //page
 @import 'page/about';
+@import 'page/contact';
+
 
 //section
 @import 'section/page';
 @import 'section/websiteDef';
 @import 'section/home';
+@import 'section/methods';
+@import 'section/slogan';
+@import 'section/services';
+@import 'section/portfolio';
+
+
 
 //component
 @import 'component/nav';
-@import 'component/social';
+@import 'component/social-icons';
 @import 'component/button';
-@import 'component/portfolio';
-@import 'component/slogan';
-@import 'component/services';
-@import 'component/methods';
 @import 'component/methods-card';
 @import 'component/input';
-@import 'component/contact';
 @import 'component/popin';
 @import 'component/cardHover';
 
@@ -36,6 +39,9 @@
 //class-utils
 @import 'class-utils/title';
 @import 'class-utils/txt';
+@import 'class-utils/padding';
+@import 'class-utils/links';
+
 
 
 

@@ -51,14 +51,18 @@
 
   <body>
     <header class="header">
-      <div class="max-w headerContent padding">
-        <img
+      <div class="max-w headerContent paddingHeader">
+        <a href="index.html">
+          <img
           class="header-logo"
           src="img/logo/logo.png"
           alt="Logo de l'entreprise TY developper"
           width="199"
           height="42"
+          loading="lazy"
         />
+        </a>
+
         <img
           class="js-burger"
           src="img/icons/burger.svg"
@@ -126,18 +130,16 @@
       <section class="home" id="home">
         <div class="homeContent max-w padding">
           <div class="homeContent-info">
-          
-              <p class="homeContent__entreprise">- TYDEVELOPPER -</p>
+            <p class="homeContent__entreprise">- TYDEVELOPPER -</p>
 
-            <h1 class="title">
+            <h1 class="title title-primary">
               Donnez vie <br />
-              à vos <br /> idées <span>en ligne</span>
+              à vos <br />
+              idées <span>en ligne</span>
             </h1>
-            <p class="homeContent-desc"></p>
-
             <p class="txt">
-              Nous développons des sites internet qui sont <br> compatibles avec les
-              écrans PC, tablettes et portables.
+              Nous développons des sites internet qui sont <br />
+              compatibles avec les écrans PC, tablettes et portables.
             </p>
             <ul class="social">
               <li>
@@ -191,7 +193,6 @@
                   height="24"
                 />
               </a>
-              
             </div>
           </div>
 
@@ -212,10 +213,10 @@
           </span>
 
           <div class="portfolio-gallery" id="gallery"></div>
-          <!--  <a href="#Contact" class="btn btn-primary">
+          <a href="#Contact" class="btn btn-secondary">
             Voir tout les projets
             <img src="img/icons/send.svg" alt="" width="24" height="24" />
-          </a> -->
+          </a>
         </div>
       </section>
       <section class="services" id="service">
@@ -233,7 +234,7 @@
                 height="auto"
                 alt=""
               />
-              <h3>Designer web</h3>
+              <h3 class="title">Designer web</h3>
               <p class="txt">
                 Création de maquettes de sites web sur mesure, adaptées à vos
                 goûts et à votre charte graphique.
@@ -246,7 +247,7 @@
                 height="47"
                 alt=""
               />
-              <h3>Développement web</h3>
+              <h3 class="title">Développement web</h3>
               <p class="txt">
                 Programmation de la partie visible de l’interface utilisateur ou
                 d’un site web.
@@ -259,7 +260,7 @@
                 height="47"
                 alt=""
               />
-              <h3>Responsive design</h3>
+              <h3 class="title">Responsive design</h3>
               <p class="txt">
                 Nous créons des expériences web adaptées à tous les écrans, des
                 ordinateurs, tablettes et mobiles.
@@ -272,7 +273,7 @@
                 height="47"
                 alt=""
               />
-              <h3>Référencement naturel</h3>
+              <h3 class="title">Référencement naturel</h3>
               <p class="txt">
                 Amélioration de la visibilité de votre site web en utilisant des
                 techniques de référencement naturel
@@ -295,7 +296,7 @@
           <div class="methods-block">
             <div class="methods-card">
               <p class="title">1</p>
-              <h4 class="title">Recherche des besoins</h4>
+              <h2 class="title title-tertiary">Recherche des besoins</h2>
               <p class="txt">
                 Recherche des besoins clients afin de commencer le projet.
               </p>
@@ -303,13 +304,13 @@
 
             <div class="methods-card">
               <p class="title">2</p>
-              <h4 class="title">Conception et design</h4>
+              <h2 class="title title-tertiary">Conception et design</h2>
               <p class="txt">Conception et design de la maquette</p>
             </div>
 
             <div class="methods-card">
               <p class="title">3</p>
-              <h4 class="title">Validation maquette</h4>
+              <h2 class="title title-tertiary">Validation maquette</h2>
               <p class="txt">
                 Vérification et modification de la maquette selon les goûts du
                 client.
@@ -320,64 +321,75 @@
           <div class="methods-block">
             <div class="methods-card">
               <p class="title">4</p>
-              <h4 class="title">Intégration</h4>
+              <h2 class="title title-tertiary">Intégration</h2>
               <p class="txt">Début de l’intégration de la maquette.</p>
             </div>
 
             <div class="methods-card">
               <p class="title">5</p>
-              <h4 class="title">Validation du site</h4>
+              <h2 class="title title-tertiary">Validation du site</h2>
               <p class="txt">Vérification du site après l'intégration.</p>
             </div>
 
             <div class="methods-card">
               <p class="title">6</p>
-              <h4 class="title">Déploiement</h4>
+              <h2 class="title title-tertiary">Déploiement</h2>
               <p class="txt">Déploiement du site en ligne.</p>
             </div>
           </div>
         </div>
       </section>
       <section class="websiteDef padding">
-        <h2 class="title title-secondary">A quoi sers un site internet</h2>
-        <div class="max-w  websiteDef__content">
-          <div class="websiteDef__contentBlock">
-            <h3>Améliore votre <span>visibilité</span></h3>
-            <p>
-              Un site internet vous permet d'être visible 24h/24, 7j/7, Vos
-              clients peuvent accéder à vos informations et produits à tout
-              moment, sans limite géographique
-            </p>
-          </div>
+        <div class="max-w">
+          <h2 class="title title-secondary">A quoi sers un site internet</h2>
+          <div class="max-w websiteDef__content">
+            <div class="websiteDef__contentBlock">
+              <h3 class="title">Améliore votre <span>visibilité</span></h3>
+              <p class="txt">
+                Un site internet vous permet d'être visible 24h/24, 7j/7, Vos
+                clients peuvent accéder à vos informations et produits à tout
+                moment, sans limite géographique
+              </p>
+            </div>
 
-          <div class="websiteDef__contentBlock">
-            <h3>Rajoute une touche de <span>crédibilité</span></h3>
-            <p>
-              Un site internet renforce votre crédibilité en montrant votre engagement envers votre entreprise et en fournissant des informations fiables sur vos produits, incitant ainsi les clients à vous faire confiance.
-            </p>
-          </div>
+            <div class="websiteDef__contentBlock">
+              <h3 class="title title-secondary">
+                Rajoute une touche de <span>crédibilité</span>
+              </h3>
+              <p class="txt">
+                Un site internet renforce votre crédibilité en montrant votre
+                engagement envers votre entreprise et en fournissant des
+                informations fiables sur vos produits, incitant ainsi les
+                clients à vous faire confiance.
+              </p>
+            </div>
 
-          <div class="websiteDef__contentBlock">
-            <h3>Source de <span>rentabilité</span></h3>
-            <p>
-              Un site internet peut générer des revenus supplémentaires, grâce à la vente en ligne et à la mise en avant de vos produits.
-            </p>
-          </div>
-          <div class="websiteDef__contentBlock">
-            <h3>Propre a  <span>vos gouts</span></h3>
-            <p>
-              Vous pouvez personnalisé selon vos goûts et votre marque, votre Branding pour refléter votre image et votre identité. Cela peut inclure la conception, les couleurs, les images, le contenu, etc ...
-            </p>
+            <div class="websiteDef__contentBlock">
+              <h3 class="title title-secondary">Source de <span>rentabilité</span></h3>
+              <p class="txt">
+                Un site internet peut générer des revenus supplémentaires, grâce
+                à la vente en ligne et à la mise en avant de vos produits.
+              </p>
+            </div>
+            <div class="websiteDef__contentBlock">
+              <h3 class="title title-secondary">Propre a <span>vos gouts</span></h3>
+              <p class="txt">
+                Vous pouvez personnalisé selon vos goûts et votre marque, votre
+                Branding pour refléter votre image et votre identité. Cela peut
+                inclure la conception, les couleurs, les images, le contenu, etc
+                ...
+              </p>
+            </div>
           </div>
         </div>
       </section>
       <section class="slogan">
         <div class="sloganContent max-w padding">
-          <h2>
+          <h2 class="title title-secondary">
             Vos concurrents ont un site internet !
             <span>Pourquoi pas vous ?</span>
           </h2>
-          <p>
+          <p class="txt">
             Nous aidons simplement à faire ressortir les idées de chacun de
             vous.
           </p>
@@ -388,12 +400,16 @@
 
     <footer class="footer">
       <div class="footerContent max-w padding">
-        <img
+        <a href="../#home">
+          <img
+          class="header-logo"
           src="img/logo/logo.png"
           alt="Logo de l'entreprise TY developper"
           width="199"
           height="42"
+          loading="lazy"
         />
+        </a>
 
         <p class="txt">Rejoignez ma communauté</p>
 

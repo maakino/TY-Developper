@@ -1,10 +1,15 @@
 .title {
   color: var(--title-primary-color);
-  font-weight: bold;
   font-family: "Montserrat";
+}
+.title-primary, .title-secondary{
+  font-weight: bold;
 }
 .title-secondary {
   font-size: clamp(2.9rem, 5vw, 4rem);
+}
+.title-tertiary{
+  font-size: clamp(2rem, 5vw, 2.4rem);
 }
 .title-group {
   display: flex;

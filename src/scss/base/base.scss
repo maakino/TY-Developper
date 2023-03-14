@@ -17,24 +17,14 @@ body {
   font-size: 1.4em;
 }
 
-main {
-  margin-top: 7.4rem;
-}
+/* main {
+  margin-top: 12.4rem;
+} */
 
 .max-w {
   max-width: 1920px;
   margin: auto;
 }
 
-.padding {
-  padding: 2rem 1.1rem;
-  @include media(small) {
-    padding: 3rem 2.7rem;
-  }
-
-  @include media(extra-large) {
-    padding: 5.4rem 24.7rem;
-  }
-}
 
 

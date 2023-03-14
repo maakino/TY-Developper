@@ -51,14 +51,16 @@
 
   <body>
     <header class="header">
-      <div class="max-w headerContent padding">
-        <img
+      <div class="max-w headerContent paddingHeader">
+        <a href="index.html">
+          <img
           class="header-logo"
           src="img/logo/logo.png"
           alt="Logo de l'entreprise TY developper"
           width="199"
           height="42"
         />
+        </a>
         <img
           class="js-burger"
           src="img/icons/burger.svg"
@@ -122,14 +124,14 @@
     </header>
 
     <main>
-      <section class="about" id="about">
-        <div class="about__content max-w padding">
-          <h1>En savoir plus</h1>
+      <section class="about padding" id="about">
+        <div class="about__content max-w ">
+          <h1 class="title">En savoir plus</h1>
           <div class="about__info">
             <div class="about__infoTxt">
               <span>
-                <h2>Qui somme-nous</h2>
-                <p>
+                <h2 class="title">Qui somme-nous</h2>
+                <p class="txt">
                   <strong class="bold">TyDevelopper</strong> est une auto-entreprise basée à <strong style="font-weight: 400;">l'Île de la Réunion</strong>
                   , spécialisée dans la
                   <strong>création de sites internet</strong> sur mesure. Les
@@ -140,9 +142,9 @@
               </span>
 
               <span>
-                <h2>Nos principales clients</h2>
+                <h2 class="title">Nos principales clients</h2>
 
-                <p>
+                <p class="txt">
                   Nous collaborons avec
                   <strong>les petites et grandes entreprises</strong> car nous
                   sommes persuadés qu'un site internet est
@@ -153,8 +155,8 @@
               </span>
 
               <span>
-                <h2>Des aides a votre dispositions</h2>
-                <p>
+                <h2 class="title">Des aides a votre dispositions</h2>
+                <p class="txt">
                   Nous somme également agréé pour <strong style="font-weight: 400;">les chèques numériques de la
                     région Réunion</strong> , <strong
                     > permettant de rembourser jusqu'à 80% du coût du projet
@@ -164,8 +166,8 @@
               </span>
 
               <span>
-                <h2>Par ou commencer ?</h2>
-                <p>
+                <h2 class="title">Par ou commencer ?</h2>
+                <p class="txt">
                   Il suffit juste de nous contacter et de nous parler de votre
                   projet afin qu’on puissent vous faire des propositions
                   adaptées à vos besoin.
@@ -181,8 +183,8 @@
                 height="292"
                 loading="lazy"
               />
-              <h2>Teddy Equerre</h2>
-              <h3>CEO / Intégrateur web</h3>
+              <h2 class="title">Teddy Equerre</h2>
+              <h3 class="txt">CEO / Intégrateur web</h3>
             </div>
           </div>
         </div>
@@ -197,8 +199,19 @@
           width="199"
           height="42"
         />
+        <nav class="nav" style="border: none;">
+          <ul class="navList">
+            <li class="navList-item"><a href="./#home">Accueil</a></li>
+            <li class="navList-item">
+              <a href="./#portfolio">Portfolio</a>
+            </li>
+            <li class="navList-item"><a href="./#service">Services</a></li>
+            <li class="navList-item"><a href="/contact.html">Contact</a></li>
+            <li class="navList-item"><a href="/#about">A propos</a></li>
+            <!--    <li class="navList-item"><a href="#about">A propos</a></li> -->
+          </ul>
+        </nav>
 
-        <p class="txt">Rejoignez ma communauté</p>
 
         <ul class="social">
           <li>

@@ -1,0 +1,19 @@
+.padding {
+    padding: 2rem 1.1rem;
+    @include media(small) {
+      padding: 3rem 2.7rem;
+    }
+    @include media(extra-large) {
+      padding: 5.4rem 24.7rem;
+    }
+  }
+  .paddingHeader{
+    padding: 2rem 1.1rem;
+    @include media(small) {
+      padding: 3rem 2.7rem;
+    }
+    @include media(large){
+      padding: 6.4rem 24.7rem;
+
+    }
+  }

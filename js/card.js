@@ -4,7 +4,7 @@ portfolio.map((project, index) =>{
     <div>
     <div class="card-hover"
     onclick="createPopup(${index})">
-    <h2>${project.title}</h2>
+    <h2 class="title title-primary">${project.title}</h2>
     </div>
             <img
               src="${project.img_src}"

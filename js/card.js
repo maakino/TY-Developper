@@ -6,19 +6,24 @@ const gallery = document.querySelector('#gallery');
 if (currentPage == 'portfolio.html') {
   portfolio.map((project, index) => {
     const img = `
-    <div>
-    <div class="card-hover"
-    onclick="createPopup(${index})">
+
+  <div class="cardProject">
+
+    <img class = "cardProject__mockup" src="img/portfolio/lastProject/mockup.png" alt="" width="414" height="239" loading="lazy">
+
+    <div class = "cardProject__content" style="background-image: url(${project.img_src});">
+
+
+    <div class="cardProject-hover" onclick="createPopup(${index})">
     <h2 class="title title-primary">${project.title}</h2>
+
     </div>
-            <img
-              src="${project.img_src}"
-              alt="miniature ${project.title}"
-              width="414"
-              height="219"
-              loading="lazy"
-            />
+
     </div>
+ 
+      
+    </div>
+
     `;
     gallery.innerHTML += img;
 
@@ -51,7 +56,7 @@ if (currentPage != 'portfolio.html' && currentPage != 'contact.html' && currentP
   </span>
   <p class ="txt"> ${project.desc} </p>
   <p class = "txt"> Technologie : ${project.techno} </p>
-  <a href="${project.type=="Voir le projet"?project.url_site:project.url_maquette}"> ${project.type} </a>
+  <a href="${project.type == "Voir le projet" ? project.url_site : project.url_maquette}" target="__blank"> ${project.type} </a>
   </div>
   </div>
   `;

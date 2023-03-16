@@ -27,19 +27,7 @@
         }
         img{
             cursor: pointer;
-            width: 32.9rem;
             height: auto;
-            box-shadow: 1.95px 1.95px 2.6px rgb(0 0 0 / 6%);
-            @include media (small){
-                width: 41.4rem;
-                margin-bottom: 2rem;
-             }
-             @include media (large){
-                width: 55.4rem;
-             }
-            @include media (extra-large){
-                width: 41.4rem;
-             }
     }
 }
 .btn{

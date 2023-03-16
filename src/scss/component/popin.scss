@@ -9,8 +9,9 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.432);
+
   &Content {
-  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+    box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
     padding: 1rem 1rem;
     width: 90%;
     background-color: var(--background-secondary-color);
@@ -22,27 +23,27 @@
     text-align: center;
     gap: 2rem;
     border-radius: 0.8rem;
-    p{
+
+    @include media(large) {
+      width: fit-content;
+      max-width: 66.4rem;
+      min-width: 66.4rem;
+      max-height: 95vh;
+    }
+    p {
+      width: 90%;
       line-height: 2;
+      overflow: auto;
     }
-    @include media (large){
-       width: fit-content;
-    }
-    h2{
-        font-size: 3.6rem;
+    h2 {
+      font-size: 3.6rem;
     }
     &-close {
-        cursor: pointer;
+      cursor: pointer;
       margin-left: auto;
-      filter: invert(52%) sepia(27%) saturate(1898%) hue-rotate(308deg) brightness(96%) contrast(112%);
-    }
-    &-img{
-        width: 100%;
-        margin: auto;
-        height: auto;
-        @include media (large){
-            width: initial;
-        }
+      filter: invert(52%) sepia(27%) saturate(1898%) hue-rotate(308deg)
+        brightness(96%) contrast(112%);
     }
   }
 }
+

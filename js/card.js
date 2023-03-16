@@ -43,14 +43,23 @@ if (currentPage != 'portfolio.html' && currentPage != 'contact.html' && currentP
     if (index > 2) return
     card += `
 <div class = "lastProjects__card  ">
-  <img src=" ${project.img_src}"
-  alt= " miniature du projet ${project.title}
-  width="414"
-  height="219"
-  loading="lazy"
-  />
+<div class="cardProject">
+
+<img class = "cardProject__mockup" src="img/portfolio/lastProject/mockup.png" alt="" width="414" height="239" loading="lazy">
+
+<div class = "cardProject__content" style="background-image: url(${project.img_src}); cursor:default;">
+
+
+<div  onclick="createPopup(${index})">
+<h2 class="title title-primary">${project.title}</h2>
+
+</div>
+
+</div>
+
+</div>
   <div class = "lastProjects__cardInfo">
-  <span class ="title-group"> 
+  <span class ="title-group">
   <p class="title title-tertiary"> ${project.tache} </p>
   <h2 class="title title-secondary"> ${project.title} </h2>
   </span>

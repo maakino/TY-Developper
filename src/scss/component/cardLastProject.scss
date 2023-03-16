@@ -42,5 +42,13 @@
         }
       }
     }
+    .cardProject__content {
+      @include media(medium){
+        width: 49rem;
+        height: 31.3rem;
+        top: 9px;
+      left: 70px;
+      }
+    }
   }
 }

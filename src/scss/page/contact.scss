@@ -15,11 +15,18 @@
     h3 {
       text-align: left;
       color: var(--txt-primary-color);
+      font-family: "Montserrat";
+      font-size: 1.8rem;
     }
     button[type="submit"] {
         border: none;
         margin: auto;
         cursor: pointer;
     }
+  }
+  &-user, &-mail, &-message{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
   }
 }

@@ -2,12 +2,16 @@
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 16rem;
+    gap: 8rem;
+    @include media (medium){
+      gap: 16rem;
+
+    }
   }
   &__card {
     display: flex;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
     gap: 2.4rem;
     @include media(large) {
       flex-direction: row-reverse;
@@ -53,4 +57,9 @@
       }
     }
   }
+  .btn-secondary {
+    width: max-content;
+    margin: auto;
+  }
+ 
 }

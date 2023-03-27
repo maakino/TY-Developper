@@ -1,10 +1,10 @@
 .slogan {
-  background-color: var(--background-primary-color);
-  min-height: 50vh;
+  background-color: var(--background-secondary-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 50vh;
   &Content {
     display: flex;
     flex-direction: column;

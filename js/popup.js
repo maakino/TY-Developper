@@ -25,8 +25,6 @@ const popin = `
     </div>
 
     </div>
- 
-      
     </div>
     </div>
 
@@ -36,8 +34,8 @@ const popin = `
     <p class="txt"> Technologie : ${data.techno} </p>
 
 
-    <a href="${data.type=="site"?data.url_site:data.url_maquette}" class="btn btn-primary" target="_blank">
-    ${data.type=="site"?"Voir le site":"Voir la maquette"}
+    <a href="${data.type=="Voir le projet"?data.url_site:data.url_maquette}" class="btn btn-primary" target="_blank">
+    ${data.type=="Voir le projet"?"Voir le projet":"Voir la maquette"}
     <img src="img/icons/send.svg"  width="24" height="24" loading="lazy"/>
   </a>
 

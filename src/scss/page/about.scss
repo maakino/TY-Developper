@@ -59,10 +59,7 @@
         }
       }
       a {
-        margin: auto;
-        @include media(large) {
-          margin: 0;
-        }
+        width: fit-content;
       }
     }
   }

@@ -20,8 +20,7 @@ if (currentPage == 'portfolio.html') {
     </div>
 
     </div>
- 
-      
+
     </div>
 
     `;
@@ -33,8 +32,8 @@ if (currentPage == 'portfolio.html') {
 if (currentPage != 'portfolio.html' && currentPage != 'contact.html' && currentPage != 'about.html') {
   /* last project */
 
-  const div = document.createElement('div');
-  div.className = 'lastProjects__content padding max-w'
+  /* const div = document.createElement('div');
+  div.className = 'lastProjects__content' */
 
   const lastProject = document.querySelector('#lastProjects');
   let card = ` `;
@@ -71,8 +70,7 @@ if (currentPage != 'portfolio.html' && currentPage != 'contact.html' && currentP
   `;
   });
 
-  div.innerHTML = card;
-  lastProject.appendChild(div);
+  lastProject.innerHTML+=card;
 }
 
 

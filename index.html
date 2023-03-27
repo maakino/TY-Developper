@@ -54,13 +54,13 @@
       <div class="max-w headerContent paddingHeader">
         <a href="index.html">
           <img
-          class="header-logo"
-          src="img/logo/logo.png"
-          alt="Logo de l'entreprise TY developper"
-          width="199"
-          height="42"
-          loading="lazy"
-        />
+            class="header-logo"
+            src="img/logo/logo.png"
+            alt="Logo de l'entreprise TY developper"
+            width="199"
+            height="42"
+            loading="lazy"
+          />
         </a>
 
         <img
@@ -74,7 +74,7 @@
           <ul class="navList">
             <li class="navList-item"><a href="#home">Accueil</a></li>
             <li class="navList-item">
-              <a href="#portfolio">Portfolio</a>
+              <a href="#lastProjects">Portfolio</a>
             </li>
             <li class="navList-item"><a href="#service">Services</a></li>
             <li class="navList-item"><a href="/contact.html">Contact</a></li>
@@ -180,7 +180,7 @@
               </li>
             </ul>
             <div class="home-btn">
-              <a href="#portfolio" class="btn btn-primary">
+              <a href="#lastProjects" class="btn btn-primary">
                 Nos projets
                 <img src="img/icons/send.svg" alt="" width="24" height="24" />
               </a>
@@ -205,18 +205,19 @@
           />
         </div>
       </section>
-      <section class="lastProjects" id="lastProjects">
+      <section class="lastProjects" >
+
         <div class="max-w padding">
+
           <span class="title-group">
             <h2 class="title title-secondary">Nos derniers projets</h2>
             <p class="txt">- Exploration de mon univers créatif -</p>
-
           </span>
-          <a href="portfolio.html" class="btn btn-secondary">
-            Voir tout les projets
-            <img src="img/icons/send.svg" alt="" width="24" height="24" />
-          </a>
+        <div class="lastProjects__content" id="lastProjects"></div> 
+        <a href="portfolio.html" class="btn btn-secondary">Voir tout les projets</a>
+
         </div>
+
       </section>
 
       <section class="services" id="service">
@@ -293,34 +294,38 @@
             </p>
           </span>
 
-          <div class="methods-block">
+          <div class="methods__fullBlock">
             <div class="methods-card">
               <p class="title">1</p>
               <h2 class="title title-tertiary">Recherche des besoins</h2>
               <p class="txt">
-                Nous commençons par effectuer une analyse des besoins des clients pour démarrer le projet.
+                Nous commençons par effectuer une analyse des besoins des
+                clients pour démarrer le projet.
               </p>
             </div>
 
             <div class="methods-card">
               <p class="title">2</p>
               <h2 class="title title-tertiary">Conception et design</h2>
-              <p class="txt">Ensuite nous passons à la conception et du design de la maquette</p>
+              <p class="txt">
+                Ensuite nous passons à la conception et du design de la maquette
+              </p>
             </div>
 
             <div class="methods-card">
               <p class="title">3</p>
               <h2 class="title title-tertiary">Validation maquette</h2>
               <p class="txt">
-                Nous vérifions et modifions la maquette selon les préférences du client.
+                Nous vérifions et modifions la maquette selon les préférences du
+                client.
               </p>
             </div>
-          </div>
 
-          <div class="methods-block">
             <div class="methods-card">
               <p class="title">4</p>
-              <h2 class="title title-tertiary">Début de l'intégration de la maquette</h2>
+              <h2 class="title title-tertiary">
+                Début de l'intégration de la maquette
+              </h2>
               <p class="txt">Début de l’intégration de la maquette.</p>
             </div>
 
@@ -364,14 +369,18 @@
             </div>
 
             <div class="websiteDef__contentBlock">
-              <h3 class="title title-secondary">Source de <span>rentabilité</span></h3>
+              <h3 class="title title-secondary">
+                Source de <span>rentabilité</span>
+              </h3>
               <p class="txt">
                 Un site internet peut générer des revenus supplémentaires, grâce
                 à la vente en ligne et à la mise en avant de vos produits.
               </p>
             </div>
             <div class="websiteDef__contentBlock">
-              <h3 class="title title-secondary">Propre a <span>vos gouts</span></h3>
+              <h3 class="title title-secondary">
+                Propre a <span>vos gouts</span>
+              </h3>
               <p class="txt">
                 Vous pouvez personnalisé selon vos goûts et votre marque, votre
                 Branding pour refléter votre image et votre identité. Cela peut
@@ -399,18 +408,23 @@
 
     <footer class="footer">
       <div class="footerContent max-w padding">
-        <a href="../#home">
-          <img
-          class="header-logo"
+        <img
           src="img/logo/logo.png"
           alt="Logo de l'entreprise TY developper"
           width="199"
           height="42"
-          loading="lazy"
         />
-        </a>
-
-        <p class="txt">Rejoignez ma communauté</p>
+        <nav class="nav" style="border: none">
+          <ul class="navList navList-footer">
+            <li class="navList-item"><a href="#home">Accueil</a></li>
+            <li class="navList-item">
+              <a href="#lastProjects">Portfolio</a>
+            </li>
+            <li class="navList-item"><a href="#service">Services</a></li>
+            <li class="navList-item"><a href="/contact.html">Contact</a></li>
+            <li class="navList-item"><a href="/about.html">A propos</a></li>
+          </ul>
+        </nav>
 
         <ul class="social">
           <li>
@@ -452,7 +466,7 @@
           </li>
         </ul>
 
-        <p class="txt">- Copyright Teddy Equerre -</p>
+        <p class="txt">Copyright Tydevelopper 2023</p>
       </div>
     </footer>
 

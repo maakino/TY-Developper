@@ -14,19 +14,19 @@
         }
 
     }
-    &-block{
-        display: flex;
-        flex-direction: column;
-        gap: 2.5rem;
-        text-align: center;
-        @include media (medium){
-            flex-direction: row;
+    &__fullBlock{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.8rem;
+        @include media (small){
+            grid-template-columns: repeat(1, 1fr);
         }
         @include media (large){
-            gap: 6rem;
+            grid-template-columns: repeat(2, 1fr);
         }
         @include media (extra-large){
-            gap: 9.6rem;
+            grid-template-columns: repeat(2, 1fr);
         }
     }
+
 }

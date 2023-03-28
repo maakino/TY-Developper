@@ -1,7 +1,7 @@
 const portfolio = [
     {
         title: "Maz Pronos",
-        desc: "Lorem ipsum dolor sit amet consectetur. Nisl varius vitae pharetra varius blandit. Ornare tempor odio eget venenatis pharetra in rhoncus rutrum dignissim. Nullam ultricies vitae duis vulputate amet duis lacus. ",
+        desc: "Maz Pronos est un site personnalisé qui fournit des conseils de pronostics sportifs pour aider les amateurs de sports à prendre des décisions éclairées. ",
         url_site: "https://mazpronos.com/",
         url_maquette: null,
         img_src: "img/portfolio/lastProject/devispower.png",
@@ -12,20 +12,20 @@ const portfolio = [
     },
     {
         title: "JCV Consult",
-        desc: "Design de la maquette graphique <br> Intégration Front-end ",
+        desc: "JCV Consult est un site vitrine sur mesure qui présente une gamme de produits dans les catégories de l'énergie renouvelable et de la sécurité. ",
         url_site: "https://jcvconsult.re/",
         url_maquette: null,
-        img_src: "img/portfolio/jcvConsult.jpg",
+        img_src: "img/portfolio/lastProject/jcvConsult.jpg",
         techno: "React / SASS / Git",
         type: "Voir le projet",
         tache: "Intégration / Design"
     },
     {
         title: "Devis power",
-        desc: "Design de la maquette graphique <br> Intégration Front-end  ",
+        desc: "Devis Power est un site sur mesure où l'on peut créer et stocker des devis personnalisés en illimité, les transformer en factures et les imprimer en quelques clics.  ",
         url_site: "https://www.devispower.fr/",
         url_maquette: null,
-        img_src: "img/portfolio/devisPower.jpg",
+        img_src: "img/portfolio/lastProject/devisPower.jpg",
         type: "Voir le projet",
         techno: "React | SASS | Git",
         tache: "Intégration / Design"

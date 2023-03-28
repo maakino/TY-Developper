@@ -6,9 +6,9 @@
   }
   &__content {
     @include media (extra-small){
-      width: 21.5rem;
-      left: 3rem;
-      height: 13.5rem;
+      min-width: 21rem;
+      left: 3.2rem;
+      min-height: 13.5rem;
       top: 0.5rem;
      }
     background: transparent;
@@ -21,27 +21,31 @@
     border-radius: 0.5rem;
     cursor: pointer;
     transition: all 0.5s;
-    width: 32.2rem;
-    height: 20.6rem;
+    min-width: 29.4rem;
+    min-height: 18.6rem;
     top: 9px;
-    left: 46px;
+    left: 45px;
     z-index: 1;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0.5rem;
+    
     h2 {
       text-align: center;
       display: none;
     }
   }
   &-hover{
-    width: 32.3rem;
-    height: 20.6rem;
+   
     z-index: 100;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.5s;
+    @include media (medium){
+      width: 32.3rem;
+      height: 20.6rem;
+    }
     &:hover {
         transition: 0.5s;
         background: rgba(253, 80, 120, 0.9);

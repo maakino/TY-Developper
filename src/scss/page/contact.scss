@@ -1,13 +1,16 @@
 .contact {
   background-color: var(--background-primary-color);
   text-align: center;
+ 
   form {
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
+    width: 95%;
+    margin: auto;
+
     @include media (small){
-      width: 59rem;
-      margin: auto;
+      width: 80%;
     }
     @include media (medium){
       width: 65.2rem;

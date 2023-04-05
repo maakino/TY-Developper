@@ -40,7 +40,7 @@
         font-family: "Montserrat";
         color: var(--txt-primary-color);
         font-weight: 400;
-        font-size: clamp(1.9rem, 5vw, 2rem);
+        font-size: clamp(1.8rem, 5vw, 1.9rem);
         &:hover {
           color: var(--links-primary-color);
           transition: 0.2s;

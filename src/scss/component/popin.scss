@@ -43,6 +43,40 @@
       margin-left: auto;
       filter: invert(52%) sepia(27%) saturate(1898%) hue-rotate(308deg)
         brightness(96%) contrast(112%);
+    width: clamp(2.4rem, 5vw, 2.8rem);
+
+    }
+  }
+  .cardProject{
+    cursor: inherit;
+    &-hover{
+      display: none;
+    }
+    &__content{
+      @include media (extra-small){
+        min-width: 20.5rem;
+        min-height: 13rem;
+        left: 3.2rem;
+      }
+      min-width: 24rem;
+      min-height: 15.4rem;
+      left: 4rem;
+      cursor: inherit;
+      @include media (small){
+        width: 38rem;
+        left: 6rem;
+        height: 25rem;
+      }
+    }
+    &__mockup{
+      @include media (extra-small){
+        width: 26.8rem;
+      }
+     width: 31.7rem;
+      height: auto;
+      @include media (small){
+        width: 50rem;
+      }
     }
   }
 }

@@ -14,7 +14,7 @@
     align-self: center;
     justify-self: center;
     @include media(small) {
-      grid-template-columns: repeat(1, 600px);
+      grid-template-columns: repeat(1, 1fr);
     }
     @include media(medium) {
       grid-template-columns: repeat(1, 600px);

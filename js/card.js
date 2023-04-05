@@ -63,7 +63,7 @@ if (currentPage != 'portfolio.html' && currentPage != 'contact.html' && currentP
   <h2 class="title title-secondary"> ${project.title} </h2>
   </span>
   <p class ="txt"> ${project.desc} </p>
-  <p class = "title techno "> Technologie : <span class="txt">${project.techno} </span>  </p>
+  <p class = "title techno "> Technologie : <span class="title">${project.techno} </span>  </p>
   <a href="${project.type == "Voir le projet" ? project.url_site : project.url_maquette}" target="__blank"> ${project.type} </a>
   </div>
   </div>

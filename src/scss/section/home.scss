@@ -96,6 +96,7 @@
   }
   &-img {
     width: 25rem;
+    height: auto;
     @include media(small) {
       width: 30rem;
     }

@@ -4,7 +4,7 @@ const portfolio = [
         desc: "Maz Pronos est un site personnalisé qui fournit des conseils de pronostics sportifs pour aider les amateurs de sports à prendre des décisions éclairées. ",
         url_site: "https://mazpronos.com/",
         url_maquette: null,
-        img_src: "img/portfolio/lastProject/devispower.png",
+        img_src: "img/portfolio/MazPronos.jpg",
         techno: "React / SASS / Git",
         type: "Voir le projet",
         tache: "Intégration / Design"

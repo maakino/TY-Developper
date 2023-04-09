@@ -60,7 +60,9 @@
         }
       }
     }
+
     .cardProject__content {
+      background-position: center;
       @include media(medium) {
         width: 49rem;
         height: 31.3rem;

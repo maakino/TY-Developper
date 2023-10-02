@@ -57,28 +57,6 @@
   }
   .social {
     justify-content: flex-start;
-    gap: 2rem;
-
-    @include media(medium) {
-      justify-content: flex-start;
-    }
-    img {
-      filter: invert(43%) sepia(7%) saturate(1152%) hue-rotate(172deg)
-        brightness(91%) contrast(85%);
-      &:hover {
-        filter: invert(54%) sepia(76%) saturate(3306%) hue-rotate(316deg)
-          brightness(100%) contrast(102%);
-        transition: 0.2s;
-      }
-      width: 2.6rem;
-      height: auto;
-      /*  @include media (small){
-        width: 3.0rem;
-      }
-      @include media(medium){
-        width: 3rem;
-      } */
-    }
   }
   &-btn {
     display: flex;

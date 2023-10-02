@@ -15,11 +15,9 @@
     }
     img {
       filter: invert(58%) sepia(67%) saturate(5215%) hue-rotate(321deg) brightness(109%) contrast(101%);
-
-
       &:hover {
         filter: inherit;
       }
-}
+  }
     }
 }

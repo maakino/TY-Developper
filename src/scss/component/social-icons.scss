@@ -1,12 +1,25 @@
 .social{
     display: flex;
-    gap: 3.5rem;
+    gap: 1.6rem;
     justify-content: center;
+    a{
+      border: 1px solid var(--links-primary-color);
+      border-radius: 0.8rem;
+      padding: 1rem;
+      transition: all 0.7s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    &:hover{
+      background-color: var(--links-primary-color);
+    }
     img {
-        filter: invert(43%) sepia(7%) saturate(1152%) hue-rotate(172deg) brightness(91%) contrast(85%);
+      filter: invert(58%) sepia(67%) saturate(5215%) hue-rotate(321deg) brightness(109%) contrast(101%);
+
+
       &:hover {
-        filter: invert(46%) sepia(83%) saturate(1927%) hue-rotate(317deg) brightness(102%) contrast(101%);
-        transition: 0.2s;
+        filter: inherit;
       }
 }
+    }
 }

@@ -1,7 +1,6 @@
 .footer {
   background-color: var(--background-secondary-color);
   border-top: 1px solid rgba(0, 0, 0, 0.05);
-
   position: relative;
   bottom: 0;
   left: 0;
@@ -12,7 +11,10 @@
     justify-content: center;
     align-items: center;
     @include media(medium) {
-      padding: 3rem 0;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 5rem 10.8rem !important;
+      justify-content: space-around;
     }
     gap: 2.8rem;
     p {
@@ -27,5 +29,32 @@
         }
       }
     }
+    &__block,
+    .navList {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      @include media(medium) {
+        align-items: flex-start;
+      gap: 1.2rem;
+
+      }
+      span {
+        display: inline-block;
+        font-size: clamp(1.8rem, 5vw, 2rem);
+      }
+    }
+    &__entreprise{
+      @include media(medium){
+        max-width:25%;
+      }
+    }
+  }
+  .nav{
+    margin: 0;
+    padding: 0;
+  }
+  .social {
+    justify-content: flex-start;
   }
 }

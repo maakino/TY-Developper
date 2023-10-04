@@ -1,9 +1,23 @@
-.websiteDef{
-
-   &Content{
+.websiteDef {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  h2{
+   text-align: center;
+  }
+  h3{
+   font-weight: 600;
+   font-size: clamp(1.8rem , 5vw, 2.1rem);
+  }
+  &Content {
     display: flex;
     flex-direction: column;
     gap: 2.9rem;
     justify-content: center;
-   }
+    width: 95%;
+    margin: auto;
+    @include media(medium){
+      gap: 5rem;
+    }
+  }
 }

@@ -90,5 +90,10 @@
       filter: invert(43%) sepia(61%) saturate(849%) hue-rotate(305deg)
         brightness(102%) contrast(101%);
     }
+    &:hover{
+      img{
+        filter: initial;
+      }
+    }
   }
 }

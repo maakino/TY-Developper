@@ -25,6 +25,7 @@
       display: none;
       padding: 1rem 0;
       animation: showTxt 1s ease-in;
+      text-align: left;
       &::selection {
         background-color: transparent;
       }

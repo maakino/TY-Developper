@@ -17,7 +17,7 @@
       justify-content: space-around;
     }
     gap: 2.8rem;
-    p {
+     p {
       font-size: 2rem;
       @include media(medium) {
         font-size: 2rem;
@@ -27,30 +27,39 @@
         @include media(medium) {
           font-size: 1.8rem;
         }
-      }
+      } 
     }
     &__block,
     .navList {
-      display: flex;
-      flex-direction: column;
-      gap: 2.8rem;
+      margin-top: 0.8rem;
+      flex-direction: row;
+      flex-wrap: wrap;
       @include media(medium) {
         align-items: flex-start;
-      gap: 1.2rem;
-
+        gap: 1.2rem;
+      }
+      @include media(extra-large) {
+       flex-direction: column;
       }
       span {
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         font-size: clamp(1.8rem, 5vw, 2rem);
+        gap: 1rem;
       }
     }
-    &__entreprise{
-      @include media(medium){
-        max-width:25%;
+    &__entreprise {
+      @include media(medium) {
+        max-width: 25%;
       }
     }
-    &__contact{
-      a{
+    &__contact {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      a {
         color: var(--txt-primary-color);
         font-weight: 400;
         transition: all 0.2s;
@@ -60,36 +69,36 @@
         align-items: center;
         gap: 1rem;
 
-        &:hover{
+        &:hover {
           color: underline var(--links-primary-color) !important;
-          img{
-            filter: invert(50%) sepia(99%) saturate(2532%) hue-rotate(317deg) brightness(102%) contrast(102%);
-
+          img {
+            filter: invert(50%) sepia(99%) saturate(2532%) hue-rotate(317deg)
+              brightness(102%) contrast(102%);
           }
         }
       }
-     img{
-      filter: invert(23%) sepia(19%) saturate(545%) hue-rotate(169deg) brightness(15%) contrast(93%);
-     }
+      img {
+        filter: invert(23%) sepia(19%) saturate(545%) hue-rotate(169deg)
+          brightness(15%) contrast(93%);
+      }
     }
   }
-  .nav{
+  .nav {
     margin: 0;
     padding: 0;
   }
   .social {
     justify-content: flex-start;
   }
-  h3{
-    font-weight: 600;
-    text-align: center;
+  h3 {
+    font-weight: 700;
   }
-  &Copy{
+  &Copy {
     text-align: center;
     font-size: clamp(1.6rem, 5vw, 1.7rem) !important;
     padding-bottom: 2rem;
   }
-  .nav::before{
+  .nav::before {
     display: none;
   }
 }

@@ -61,10 +61,10 @@
   &-btn {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 3rem;
     @include media(small) {
-    flex-direction: row;
+      flex-direction: row;
       align-items: flex-start;
       gap: 3rem;
     }
@@ -90,8 +90,8 @@
       filter: invert(43%) sepia(61%) saturate(849%) hue-rotate(305deg)
         brightness(102%) contrast(101%);
     }
-    &:hover{
-      img{
+    &:hover {
+      img {
         filter: initial;
       }
     }

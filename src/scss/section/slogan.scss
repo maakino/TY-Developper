@@ -26,10 +26,12 @@
     }
     @include media(large) {
       width: 80%;
-      padding: 2.5rem 0.7rem;
+      padding: 2.5rem 1.7rem;
     }
     @include media(extra-large) {
-      width: fit-content;
+width: 100%;
+      padding: 2.5rem 0.7rem;
+
     }
     &__txt {
       display: flex;
@@ -74,7 +76,7 @@
 
     h2 {
       font-size: clamp(2.3rem, 4vw, 3.2rem);
-      font-weight: 600;
+      font-weight: 800;
       display: flex;
       flex-direction: column;
       justify-content: center;

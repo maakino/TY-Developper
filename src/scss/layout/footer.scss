@@ -17,7 +17,7 @@
       justify-content: space-around;
     }
     gap: 2.8rem;
-     p {
+    p {
       font-size: 2rem;
       @include media(medium) {
         font-size: 2rem;
@@ -27,11 +27,10 @@
         @include media(medium) {
           font-size: 1.8rem;
         }
-      } 
+      }
     }
     &__block,
     .navList {
-      margin-top: 0.8rem;
       flex-direction: row;
       flex-wrap: wrap;
       @include media(medium) {
@@ -39,7 +38,7 @@
         gap: 1.2rem;
       }
       @include media(extra-large) {
-       flex-direction: column;
+        flex-direction: column;
       }
       span {
         display: flex;
@@ -51,14 +50,18 @@
       }
     }
     &__entreprise {
+      display: flex;
+      flex-direction: column;
       @include media(medium) {
         max-width: 25%;
       }
     }
-    &__contact {
+    &__block {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
+    }
+    &__contact {
       a {
         color: var(--txt-primary-color);
         font-weight: 400;
@@ -68,13 +71,9 @@
         flex-direction: row;
         align-items: center;
         gap: 1rem;
-
+        text-decoration: underline var(--links-primary-color);
         &:hover {
-          color: underline var(--links-primary-color) !important;
-          img {
-            filter: invert(50%) sepia(99%) saturate(2532%) hue-rotate(317deg)
-              brightness(102%) contrast(102%);
-          }
+        color: var(--links-primary-color);
         }
       }
       img {
@@ -96,9 +95,40 @@
   &Copy {
     text-align: center;
     font-size: clamp(1.6rem, 5vw, 1.7rem) !important;
-    padding-bottom: 2rem;
   }
+
   .nav::before {
     display: none;
+  }
+
+  &__end{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1.4rem;
+    justify-content: space-between;
+    @include media(medium){
+      flex-direction: row;
+    }
+    &::before{
+      content: "";
+      display: block;
+      width: 1rem;
+    }
+    a{
+      font-size: clamp(1.8rem, 5vw, 2rem);
+      color: var(--txt-primary-color);
+      font-weight: 400;
+      transition: all 0.2s;
+      text-decoration: underline transparent;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+      text-decoration: underline var(--links-primary-color);
+      &:hover {
+      color: var(--links-primary-color);
+      }
+    }
   }
 }

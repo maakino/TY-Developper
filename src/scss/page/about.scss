@@ -4,7 +4,6 @@
   background-color: var(--background-primary-color);
   h1 {
     font-size: clamp(1.8rem, 2.4rem + 2.5vw, 4.8rem);
-    margin-bottom: 2.5rem;
     font-weight:800;
     text-align: center;
     @include media(small) {
@@ -16,7 +15,7 @@
     }
     @include media(large) {
       text-align: center;
-      width: 50%;
+      width: 60%;
       margin: initial;
 
     }

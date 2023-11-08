@@ -1,60 +1,12 @@
 /* Raleway */
 @font-face {
   font-family: "Raleway";
-  src: url("/../../../font/raleway/Raleway-Regular.eot");
-  src: url("../../../font/raleway/Raleway-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../../../font/raleway/Raleway-Regular.otf") format("otf"),
-    url("../../../font/raleway/Raleway-Regular.ttf") format("truetype"),
-    url("../../../font/raleway/Raleway-Regular.woff2") format("woff2"),
-    url("../../../font/raleway/Raleway-Regular.woff") format("woff"),
-    url("../../../font/raleway/Raleway-Regular.svg#Raleway-Regular") format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Raleway";
-  src: url("../../../font/raleway/Raleway-SemiBold.eot");
-  src: url("../../../font/raleway/Raleway-SemiBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../../../font/raleway/Raleway-SemiBold.woff2") format("woff2"),
-    url("../../../font/raleway/Raleway-SemiBold.woff") format("woff"),
-    url("../../../font/raleway/Raleway-SemiBold.ttf") format("truetype"),
-    url("../../../font/raleway/Raleway-SemiBold.svg#Raleway-SemiBold")
-      format("svg");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* Montserrat */
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("../../../font/montserrat/Montserrat-Bold.eot");
-  src: url("../../../font/montserrat/Montserrat-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../../../font/montserrat/Montserrat-Bold.otf") format("otf"),
-    url("../../../font/montserrat/Montserrat-Bold.svg#Montserrat-Bold")
-      format("svg"),
-    url("../../../font/montserrat/Montserrat-Bold.ttf") format("truetype"),
-    url("../../../font/montserrat/Montserrat-Bold.woff") format("woff"),
-    url("../../../font/montserrat/Montserrat-Bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
+  src: url("../../../font/raleway/Raleway-VariableFont_wght.ttf");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../../../font/montserrat/Montserrat-SemiBold.eot");
-  src: url("../../../font/montserrat/Montserrat-SemiBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../../../font/montserrat/Montserrat-SemiBold.otf") format("otf"),
-    url("../../../font/montserrat/Montserrat-SemiBold.svg#Montserrat-SemiBold")
-      format("svg"),
-    url("../../../font/montserrat/Montserrat-SemiBold.woff") format("woff"),
-    url("../../../font/montserrat/Montserrat-SemiBold.ttf") format("truetype"),
-    url("../../../font/montserrat/Montserrat-SemiBold.woff2") format("woff2");
+  src: url("../../../font/montserrat/Montserrat-VariableFont_wght.ttf");
+  font-display: swap;
 }

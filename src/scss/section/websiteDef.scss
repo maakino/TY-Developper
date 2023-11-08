@@ -1,35 +1,23 @@
-.websiteDef{
-    h2{
-        text-align: center;
-        margin-bottom: 1.5rem;
+.websiteDef {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  h2{
+   text-align: center;
+  }
+  h3{
+   font-weight: 600;
+   font-size: clamp(1.8rem , 5vw, 2.1rem);
+  }
+  &Content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.9rem;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
+    @include media(medium){
+      gap: 5rem;
     }
-    &__content{
-        display: flex;
-        flex-direction: column;
-        gap: 4.7rem;
-        margin: auto;
-        max-width: 90%;
-        @include media (medium){
-            max-width: 80%;
-            }
-        &Block{
-            display: flex;
-            flex-direction: column;
-            gap: 1.6rem;
-        }
-        h3{
-            font-weight: 500;
-            color: var(--txt-primary-color);
-            font-size: clamp(2.2rem,5vw,2.4rem);
-            span{
-                color: #139374 ;
-            }
-        }
-        p{
-            color: var(--txt-primary-color);
-            @include media (medium){
-                font-size: 2.4rem;
-                }
-        }
-    }
+  }
 }

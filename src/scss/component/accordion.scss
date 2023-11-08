@@ -1,0 +1,67 @@
+.accordion {
+  border-bottom: 0.3rem solid var(--txt-primary-color);
+  width: 100%;
+  &Content {
+    &__title {
+      cursor: pointer;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        filter: invert(5%) sepia(15%) saturate(973%) hue-rotate(314deg)
+          brightness(15%) contrast(99%);
+        &::selection {
+          background-color: transparent;
+        }
+      }
+      h3 {
+        text-align: left;
+        &::selection {
+          background-color: transparent;
+        }
+      }
+    }
+    &__txt {
+      display: none;
+      padding: 1rem 0;
+      animation: showTxt 1s ease-in;
+      text-align: left;
+      &::selection {
+        background-color: transparent;
+      }
+    }
+  }
+}
+.showAccordion {
+  display: flex;
+}
+.imgAnimation {
+  transition: all 0.5s;
+  rotate: 60deg;
+  filter: invert(53%) sepia(60%) saturate(4070%) hue-rotate(319deg)
+    brightness(105%) contrast(104%) !important;
+}
+@keyframes showTxt {
+  0% {
+    height: 0px;
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes closeTxt {
+  0% {
+    height: 100px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}

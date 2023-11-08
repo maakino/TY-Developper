@@ -1,39 +1,84 @@
 .slogan {
-  background-color: var(--background-secondary-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 50vh;
   &Content {
+    background-color: var(--background-secondary-color);
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    gap: 1.8rem;
+    gap: 2.6rem;
+    border-radius: 0.8rem;
     text-align: center;
+    padding: 2.5rem 1.7rem;
+    width: 100%;
+    @include media(small) {
+      min-width: 68%;
+      max-width: 80%;
+      width: max-content;
+    }
+    @include media(medium) {
+      width: 90%;
+      flex-direction: row;
+    }
+    @include media(large) {
+      width: 80%;
+      padding: 2.5rem 1.7rem;
+    }
+    @include media(extra-large) {
+      width: 90%;
+      padding: 2.5rem 0.7rem;
+    }
+    &__txt {
+      display: flex;
+      flex-direction: column;
+      gap: 2.6rem;
+      @include media(small) {
+        max-width: 80%;
+      }
+      @include media(medium) {
+        text-align: left;
+        max-width: 85%;
+      }
+      @include media(extra-large) {
+        max-width: 50%;
+      }
+      .btn {
+        width: fit-content;
+        margin: auto;
+      }
+    }
+    &__img {
+      img {
+        @include media(extra-small) {
+          width: 26.1rem;
+          height: 14.6rem;
+        }
+        border-radius: 0.8rem;
+        @include media(small) {
+          width: 40rem;
+          height: 22.5rem;
+        }
+        @include media(medium) {
+          width: 37.1rem;
+          height: auto;
+        }
+        @include media(medium) {
+          width: 44.1rem;
+          height: 23.3rem;
+        }
+      }
+    }
 
     h2 {
-      font-size: 2.3rem;
-      font-weight: 600;
+      font-size: clamp(2.3rem, 4vw, 3.2rem);
+      font-weight: 800;
       display: flex;
       flex-direction: column;
       justify-content: center;
-
-      @include media(small) {
-        font-size: 4rem;
-      }
-      span {
-        font-weight: 700;
-        font-size: 3rem;
-        @include media(medium) {
-          font-size: 5.5rem;
-        }
-        @include media(large) {
-          font-size: 6.4rem;
-        }
-
-      }
     }
     p {
       font-size: 1.8rem;

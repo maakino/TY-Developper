@@ -57,36 +57,14 @@
   }
   .social {
     justify-content: flex-start;
-    gap: 2rem;
-
-    @include media(medium) {
-      justify-content: flex-start;
-    }
-    img {
-      filter: invert(43%) sepia(7%) saturate(1152%) hue-rotate(172deg)
-        brightness(91%) contrast(85%);
-      &:hover {
-        filter: invert(54%) sepia(76%) saturate(3306%) hue-rotate(316deg)
-          brightness(100%) contrast(102%);
-        transition: 0.2s;
-      }
-      width: 2.6rem;
-      height: auto;
-      /*  @include media (small){
-        width: 3.0rem;
-      }
-      @include media(medium){
-        width: 3rem;
-      } */
-    }
   }
   &-btn {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 3rem;
     @include media(small) {
-    flex-direction: row;
+      flex-direction: row;
       align-items: flex-start;
       gap: 3rem;
     }
@@ -111,6 +89,11 @@
     img {
       filter: invert(43%) sepia(61%) saturate(849%) hue-rotate(305deg)
         brightness(102%) contrast(101%);
+    }
+    &:hover {
+      img {
+        filter: initial;
+      }
     }
   }
 }

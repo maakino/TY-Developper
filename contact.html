@@ -115,51 +115,106 @@
     </header>
 
     <main>
-      <section class="contact" id="contact">
-        <div class="contactContent max-w padding">
-          <span class="title-group">
+      <section class="contact max-w padding" id="contact">
+        <div class="contactContent">
+          <span class="title-group contactTitle">
             <h2 class="title title-secondary">
-              En route pour de nouvelles aventures
+              En route pour de nouvelles aventures !
             </h2>
             <p class="txt">
-              - Prenez contact avec nous et parlez-nous de votre projet -
+              Prenez contact avec nous et parlez-nous de votre projet
             </p>
           </span>
 
-          <form action="https://formspree.io/f/mkneqapj" method="POST">
-            <div class="contact-user">
-              <h3>Nom complet ou nom d'entreprise</h3>
-              <input
-                class="input"
-                type="name"
-                name="nom"
-                placeholder="Veuillez entrez votre nom"
-              />
+          <div class="contactMid">
+            <form action="https://formspree.io/f/mkneqapj" method="POST">
+              <div class="contact-user">
+                <h3>Nom complet ou nom d'entreprise</h3>
+                <input
+                  class="input"
+                  type="name"
+                  name="nom"
+                  placeholder="Veuillez entrez votre nom"
+                />
+              </div>
+              <div class="contact-mail">
+                <h3>Email</h3>
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  placeholder="Veuillez entrez votre email"
+                />
+              </div>
+              <div class="contact-message">
+                <h3>Message / Demande de rendez-vous</h3>
+                <textarea
+                  class="textarea"
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Entrer Votre message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Envoyer
+                <img src="img/icons/send.svg" width="24" height="auto" alt="" />
+              </button>
+            </form>
+
+            <div class="contactInfo">
+              <span class="contactInfo__ty">
+                <h3 class="title title-primary">Nos informations</h3>
+                <a href="mailto:tydevelopper@gmail.com" class="txt">
+                  <img
+                    src="img/icons/mail.svg"
+                    alt=""
+                    width="25"
+                    height="35"
+                    loading="lazy"
+                  />
+                  Tydevelopper@gmail.com
+                </a>
+                <span>
+                  <img
+                    src="img/icons/map.svg"
+                    alt=""
+                    width="21"
+                    height="auto"
+                    loading="lazy"
+                  />
+                  <p class="txt">La Possession, ile de la Réunion 97 419</p>
+                </span>
+              </span>
+              <div class="contactFollow">
+                <h3 class="title title-primary">Suivez-nous</h3>
+                <span class="contactFollow__sociaux">
+                  <a href="https://www.linkedin.com/in/teddy-equerre-514a781a2/"
+                    ><img
+                      src="img/reseau/icon-linkedin.svg"
+                      alt="Icon Linkedin"
+                      width="25"
+                      height="25"
+                  /></a>
+                  <a href="https://www.instagram.com/tydevelopper/"
+                    ><img
+                      src="img/reseau/icon-instagram.svg"
+                      alt="Icon instagram"
+                      width="25"
+                      height="25"
+                  /></a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100087801758320"
+                    ><img
+                      src="img/reseau/icon-facebook.svg"
+                      alt="Icon Facebook"
+                      width="25"
+                      height="25"
+                  /></a>
+                </span>
+              </div>
             </div>
-            <div class="contact-mail">
-              <h3>Email</h3>
-              <input
-                class="input"
-                type="email"
-                name="email"
-                placeholder="Veuillez entrez votre email"
-              />
-            </div>
-            <div class="contact-message">
-              <h3>Message / Demande de rendez vous</h3>
-              <textarea
-                class="textarea"
-                name="message"
-                cols="30"
-                rows="10"
-                placeholder="Entrer Votre message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">
-              Envoyer
-              <img src="img/icons/send.svg" width="24" height="auto" alt="" />
-            </button>
-          </form>
+          </div>
         </div>
       </section>
     </main>
@@ -176,7 +231,8 @@
             />
           </a>
           <p class="txt">
-            Nous développons des sites internet qui sont compatibles avec les écrans PC, tablettes et portables
+            Nous développons des sites internet qui sont compatibles avec les
+            écrans PC, tablettes et portables
           </p>
           <ul class="social">
             <li>
@@ -212,20 +268,32 @@
           <h3 class="title title-tertiary">Menue</h3>
           <nav class="nav" style="border: none">
             <ul class="navList navList-footer">
-              <li class="navList-item"><a href="./index.html#home">Accueil</a></li>
+              <li class="navList-item">
+                <a href="./index.html#home">Accueil</a>
+              </li>
               <li class="navList-item">
                 <a href="./index.html#lastProjects" class="txt">Portfolio</a>
               </li>
-              <li class="navList-item"><a href="index.html#service" class="txt">Services</a></li>
-              <li class="navList-item"><a href="#contact" class="txt">Contact</a></li>
-              <li class="navList-item"><a href="/about.html#about" class="txt">À propos</a></li>
+              <li class="navList-item">
+                <a href="index.html#service" class="txt">Services</a>
+              </li>
+              <li class="navList-item">
+                <a href="#contact" class="txt">Contact</a>
+              </li>
+              <li class="navList-item">
+                <a href="/about.html#about" class="txt">À propos</a>
+              </li>
             </ul>
           </nav>
         </div>
         <div class="footerContent__block footerContent__contact">
           <h3 class="title title-tertiary">Contact</h3>
-          <a href="mailto:tydevelopper@gmail.com" class="txt" title="adresse mail de l'entreprise">
-            <img src="img/icons/Vector-1.svg" alt="" width="21" height="21" />
+          <a
+            href="mailto:tydevelopper@gmail.com"
+            class="txt"
+            title="adresse mail de l'entreprise"
+          >
+            <img src="img/icons/mail.svg" alt="" width="21" height="21" />
             Tydevelopper@gmail.com</a
           >
           <a href="tel:0692142432" class="txt" title="Numéro de l'entreprise">
@@ -233,8 +301,14 @@
             06 92 14 24 32</a
           >
           <span class="txt">
-            <img src="img/icons/Vector.svg" class="txt" alt="" width="21" height="21" /> 974
-            19 La Possession, île de la Réunion</span
+            <img
+              src="img/icons/map.svg"
+              class="txt"
+              alt=""
+              width="21"
+              height="21"
+            />
+            974 19 La Possession, île de la Réunion</span
           >
         </div>
       </div>

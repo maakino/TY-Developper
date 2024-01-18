@@ -55,6 +55,9 @@
       @include media(medium) {
         max-width: 25%;
       }
+      .txt{
+        font-weight: 500;
+      }
     }
     &__block {
       display: flex;

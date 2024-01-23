@@ -1,11 +1,10 @@
 .portfolio {
-  background-color: var(--background-secondary-color);
-
   &Content {
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 1rem;
+    min-height: 75vh;
     @include media(large) {
       gap: 2.3rem;
     }

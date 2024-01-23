@@ -1,7 +1,8 @@
 .contact {
-  background-color: var(--background-primary-color);
-  text-align: center;
- 
+/*   background-color: var(--background-primary-color); */
+  &Title{
+    text-align: left !important;
+  }
   form {
     display: flex;
     flex-direction: column;
@@ -14,22 +15,74 @@
     }
     @include media (medium){
       width: 65.2rem;
+      margin: initial;
     }
     h3 {
       text-align: left;
       color: var(--txt-primary-color);
       font-family: "Montserrat";
       font-size: 1.8rem;
+      font-weight: 500;
     }
     button[type="submit"] {
         border: none;
-        margin: auto;
+        margin-left: auto;
         cursor: pointer;
     }
   }
-  &-user, &-mail, &-message{
+  &Mid{
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+
+    @include media (medium){
+      flex-direction: row;
+      justify-content: start;
+      align-items: start;
+      gap: 9.7rem;
+    }
+  }
+  &Info, &info__ty, &Follow{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  &info__ty{
+    span,a{
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+  }
+  &info{
+    margin-top: 2.4rem;
+    @include media (small){
+      margin: auto;
+    }
+    @include media (medium){
+      margin: initial;
+    }
+    img, a{
+      transition: all 0.2s ease 0s;
+      filter: invert(2%) sepia(18%) saturate(1618%) hue-rotate(314deg) brightness(20%) contrast(95%);
+    }
+    a{
+      text-decoration: underline;
+      &:hover{
+        filter: invert(52%) sepia(78%) saturate(3412%) hue-rotate(319deg) brightness(105%) contrast(101%);
+      }
+    }
+    h3{
+      font-size: clamp(2rem, 5vw, 2.4rem);
+    }
+  }
+  &Follow__sociaux{
+    display: flex;
+    gap: 1.4rem;
+    flex-direction: row;
+    align-items: center;
+    a{
+      filter: invert(84%) sepia(23%) saturate(6494%) hue-rotate(299deg) brightness(102%) contrast(98%);
+    }
+
   }
 }

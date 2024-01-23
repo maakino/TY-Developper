@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 1000;
   border-bottom: 0.1rem solid transparent;
   transition: all 0.2s;
   &Content {
@@ -58,7 +58,8 @@
   }
   &-logo {
     cursor: pointer;
-    width: 150px;
+    height: 5rem;
+    width: 5rem;
     height: auto;
   }
 
@@ -92,7 +93,6 @@
     gap: 3.5rem;
     width: 100%;
     padding-top: 1.5rem;
-    background-color: red;
   }
 }
 /* Annimation scroll */

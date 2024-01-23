@@ -16,10 +16,11 @@
     @include media(large) {
       text-align: center;
       width: 60%;
-      margin: initial;
+      margin: auto;
     }
     @include media(extra-large) {
       text-align: left;
+      margin: initial;
     }
   }
   &__content {
@@ -30,8 +31,11 @@
     justify-content: center;
     align-items: flex-start;
     gap: 3.2rem;
+    @include media(medium) {
+      align-items: center;
+    }
 
-    @include media(large) {
+    @include media(extra-large) {
       flex-direction: row;
       justify-content: space-around;
       gap: 0;
@@ -50,8 +54,11 @@
         margin: auto;
       }
       @include media(large) {
-        width: 50%;
+        width: 90%;
         margin: 0;
+      }
+      @include media(extra-large) {
+        width: 50%;
       }
       span {
         h2 {
@@ -72,9 +79,12 @@
       }
     }
   }
-
   &__ceo {
-    position: relative;
+    .txt, .title{
+      font-weight: 500;
+      font-size: clamp(2rem, 5vw, 2.5rem);
+      text-align: center;
+    }
     margin: auto;
     @include media(small) {
       img {
@@ -82,13 +92,17 @@
         height: auto;
       }
     }
-    @include media(extra-large){
+    @include media(large) {
       margin: 0;
-      width: 38.9rem;
-      right: 200px;
       img {
         width: 47.9rem;
       }
     }
+    @include media(extra-large) {
+      position: fixed;
+      top: 200px;
+      right: 200px;
+    }
   }
+ 
 }

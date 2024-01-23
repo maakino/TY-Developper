@@ -4,7 +4,7 @@
   background-color: var(--background-primary-color);
   h1 {
     font-size: clamp(1.8rem, 2.4rem + 2.5vw, 4.8rem);
-    font-weight:800;
+    font-weight: 800;
     text-align: center;
     @include media(small) {
       width: 89%;
@@ -17,7 +17,6 @@
       text-align: center;
       width: 60%;
       margin: initial;
-
     }
     @include media(extra-large) {
       text-align: left;
@@ -61,7 +60,6 @@
           font-weight: 600;
         }
         p {
-          
           font-size: 1.8rem;
           word-wrap: break-word;
         }
@@ -76,16 +74,20 @@
   }
 
   &__ceo {
+    position: relative;
     margin: auto;
-    @include media(large) {
+    @include media(small) {
+      img {
+        width: 34.9rem;
+        height: auto;
+      }
+    }
+    @include media(extra-large){
       margin: 0;
       width: 38.9rem;
-      position: sticky;
-      right: 0;
-      top: 0;
+      right: 200px;
       img {
-        width: 38.9rem;
-        height: auto;
+        width: 47.9rem;
       }
     }
   }

@@ -17,4 +17,12 @@
       padding: 7.0rem 24.7rem;
     }
   }
-
+.paddingFooter{
+  padding: 2rem 1.1rem;
+  @include media(small) {
+    padding: 3rem 2.7rem;
+  }
+  @include media(extra-large) {
+    padding: 2.0rem 24.7rem;
+  }
+}

@@ -43,7 +43,6 @@
       flex-direction: column;
       @include media(medium) {
         gap: 2.2rem;
-       align-items: flex-start;
       }
       @include media(extra-large) {
         flex-direction: column;

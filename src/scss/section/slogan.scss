@@ -21,15 +21,16 @@
       width: max-content;
     }
     @include media(medium) {
+      max-width: none;
+
       width: 90%;
-      flex-direction: row;
     }
     @include media(large) {
-      width: 80%;
       padding: 2.5rem 1.7rem;
+      flex-direction: row;
+
     }
     @include media(extra-large) {
-      width: 90%;
       padding: 2.5rem 0.7rem;
     }
     &__txt {
@@ -79,13 +80,23 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      @include media(small) {
+      text-align: center;
+      }
+      @include media(large) {
+        text-align: left;
+        }
     }
     p {
       font-size: 1.8rem;
 
       @include media(small) {
         font-size: 2.4rem;
+        text-align: center;
       }
+      @include media(large) {
+        text-align: left;
+        }
     }
   }
 }

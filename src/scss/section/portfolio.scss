@@ -47,6 +47,7 @@
       }
     }
     &__content {
+      background-position: center;
       @include media(extra-small) {
         min-width: 23rem;
         left: 3.4rem;

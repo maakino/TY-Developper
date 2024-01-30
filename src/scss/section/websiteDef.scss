@@ -18,6 +18,13 @@
     margin: auto;
     @include media(medium){
       gap: 5rem;
+      width: 100%;
+    }
+    @include media(large){
+      width: 90%;
+    }
+    @include media(extra-large){
+      width: 100%;
     }
   }
 }

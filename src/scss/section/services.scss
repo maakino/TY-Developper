@@ -15,6 +15,12 @@
         flex-direction: row-reverse;
       }
     }
+    @include media(large) {
+      gap: 10rem;
+    }
+    @include media(extra-large) {
+      gap: 8.8rem;
+    }
     &__block {
       display: flex;
       flex-direction: column;
@@ -32,34 +38,29 @@
       }
 
       @include media(medium) {
-        width: 40%;
         display: flex;
         flex-direction: column;
         text-align: left;
         gap: 0.8rem;
         align-items: flex-start;
+        width: 55%;
       }
-      @include media(medium) {
-        width: 50%;
+      @include media(extra-large) {
+       width: auto;
       }
     }
     &__img {
       border-radius: 0.8rem;
+      height: auto;
       @include media(small) {
         width: 39rem;
-        height: auto;
       }
       @include media(medium) {
-        width: 33rem;
-        height: auto;
-      }
-      @include media(large) {
-        width: 40rem;
-        height: auto;
+        width: 35rem;
       }
       @include media(extra-large) {
-        width: 50rem;
-        height: auto;
+        width: 43rem;
+
       }
     }
     &__title {

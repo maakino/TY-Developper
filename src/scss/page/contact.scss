@@ -1,7 +1,8 @@
-.contact {
-/*   background-color: var(--background-primary-color); */
-  &Title{
-    text-align: left !important;
+/* .contact {
+  &Title {
+    @include media(extra-large) {
+      text-align: left !important;
+    }
   }
   form {
     display: flex;
@@ -10,10 +11,10 @@
     width: 95%;
     margin: auto;
 
-    @include media (small){
+    @include media(small) {
       width: 80%;
     }
-    @include media (medium){
+    @include media(medium) {
       width: 65.2rem;
       margin: initial;
     }
@@ -25,64 +26,186 @@
       font-weight: 500;
     }
     button[type="submit"] {
-        border: none;
-        margin-left: auto;
-        cursor: pointer;
+      border: none;
+      margin-left: auto;
+      cursor: pointer;
     }
   }
-  &Mid{
+  &Mid {
     display: flex;
     flex-direction: column;
-
-    @include media (medium){
+    @include media(large) {
       flex-direction: row;
       justify-content: start;
       align-items: start;
       gap: 9.7rem;
     }
+    @include media(large) {
+      justify-content: center;
+    }
+    @include media(extra-large) {
+      justify-content: flex-start;
+    }
   }
-  &Info, &info__ty, &Follow{
+  &Info,
+  &info__ty,
+  &Follow {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
   }
-  &info__ty{
-    span,a{
+  &info__ty {
+    span,
+    a {
       display: flex;
       align-items: center;
       gap: 0.8rem;
     }
   }
-  &info{
+  &info {
     margin-top: 2.4rem;
-    @include media (small){
+    @include media(small) {
       margin: auto;
     }
-    @include media (medium){
+    @include media(medium) {
       margin: initial;
     }
-    img, a{
+    img,
+    a {
       transition: all 0.2s ease 0s;
-      filter: invert(2%) sepia(18%) saturate(1618%) hue-rotate(314deg) brightness(20%) contrast(95%);
+      filter: invert(2%) sepia(18%) saturate(1618%) hue-rotate(314deg)
+        brightness(20%) contrast(95%);
     }
-    a{
+    a {
       text-decoration: underline;
-      &:hover{
-        filter: invert(52%) sepia(78%) saturate(3412%) hue-rotate(319deg) brightness(105%) contrast(101%);
+      &:hover {
+        filter: invert(52%) sepia(78%) saturate(3412%) hue-rotate(319deg)
+          brightness(105%) contrast(101%);
       }
     }
-    h3{
+    h3 {
       font-size: clamp(2rem, 5vw, 2.4rem);
     }
   }
-  &Follow__sociaux{
+  &Follow__sociaux {
     display: flex;
     gap: 1.4rem;
     flex-direction: row;
     align-items: center;
-    a{
-      filter: invert(84%) sepia(23%) saturate(6494%) hue-rotate(299deg) brightness(102%) contrast(98%);
+    a {
+      filter: invert(84%) sepia(23%) saturate(6494%) hue-rotate(299deg)
+        brightness(102%) contrast(98%);
     }
+  }
+}
+ */
 
+.contact {
+  &Title {
+    @include media(extra-large) {
+      text-align: left !important;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    width: 100%;
+    margin: auto;
+    @include media(medium) {
+      width: 65.2rem;
+      margin: initial;
+    }
+    @include media(large) {
+      width: 52.2rem;
+    }
+    @include media(extra-large) {
+      width: 65.2rem;
+    }
+    h3 {
+      text-align: left;
+      color: var(--txt-primary-color);
+      font-family: "Montserrat";
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+    button[type="submit"] {
+      border: none;
+      margin-left: auto;
+      cursor: pointer;
+    }
+  }
+
+  &Mid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 95%;
+    margin: auto;
+    @include media(small) {
+      width: 90%;
+    }
+    @include media(medium) {
+      width: 70%;
+    }
+    @include media(large) {
+      width: 100%;
+      justify-content: center;
+      flex-direction: row;
+      gap: 6.4rem;
+    }
+    @include media(extra-large) {
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: inherit;
+      gap: 9.4rem;
+    }
+  }
+
+  &Info,
+  &info__ty,
+  &Follow {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  &info__ty {
+    span,
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+  }
+  &info {
+    margin-top: 2.4rem;
+    img,
+    a {
+      transition: all 0.2s ease 0s;
+      filter: invert(2%) sepia(18%) saturate(1618%) hue-rotate(314deg)
+        brightness(20%) contrast(95%);
+    }
+    a {
+      text-decoration: underline;
+      &:hover {
+        filter: invert(52%) sepia(78%) saturate(3412%) hue-rotate(319deg)
+          brightness(105%) contrast(101%);
+      }
+    }
+    h3 {
+      font-size: clamp(2rem, 5vw, 2.4rem);
+    }
+  }
+  &Follow__sociaux {
+    display: flex;
+    gap: 1.4rem;
+    flex-direction: row;
+    align-items: center;
+    a {
+      filter: invert(84%) sepia(23%) saturate(6494%) hue-rotate(299deg)
+        brightness(102%) contrast(98%);
+    }
   }
 }

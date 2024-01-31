@@ -16,8 +16,17 @@
     justify-content: center;
     width: 85%;
     margin: auto;
+    @include media(small){
+      width: 100%;
+    }
     @include media(medium){
       gap: 5rem;
+    }
+    @include media(large){
+      width: 90%;
+    }
+    @include media(extra-large){
+      width: 100%;
     }
   }
 }

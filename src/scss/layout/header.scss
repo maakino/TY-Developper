@@ -16,7 +16,7 @@
     flex-wrap: wrap;
 
     @include media(medium) {
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: nowrap;
     }
 
@@ -58,8 +58,8 @@
   }
   &-logo {
     cursor: pointer;
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
     height: auto;
   }
 

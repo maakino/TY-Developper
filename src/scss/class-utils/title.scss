@@ -3,7 +3,7 @@
   font-family: "Montserrat";
 }
 .title-primary, .title-secondary{
-  font-weight: bold;
+  font-weight: 900;
 }
 .title-secondary {
   font-size: clamp(2.9rem, 5vw, 3.6rem);
@@ -17,4 +17,8 @@
   text-align: center;
   margin-bottom: 3.2rem;
   gap: 0.5rem;
+  @include media(medium){
+  margin-bottom: 5rem;
+
+  }
 }

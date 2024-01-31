@@ -7,6 +7,7 @@
   &__content {
     @include media(extra-small) {
       min-width: 21rem;
+      width: 2.1rem;
       left: 3.2rem;
       min-height: 12.5rem;
       top: 0.5rem;
@@ -21,10 +22,10 @@
     border-radius: 0.5rem;
     cursor: pointer;
     transition: all 0.5s;
-    min-width: 29.4rem;
-    min-height: 18.6rem;
-    top: 9px;
-    left: 45px;
+    min-width: 26.4rem;
+    min-height: 16.9rem;
+    top: 6px;
+    left: 40px;
     z-index: 1;
     background-repeat: no-repeat;
     background-size: cover;

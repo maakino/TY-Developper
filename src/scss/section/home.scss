@@ -1,14 +1,14 @@
 .home {
   background-color: var(--background-primary-color);
   h1 {
-    font-size: clamp(2.2rem, 4vw, 5rem);
+    font-size: clamp(2.2rem, 3.6vw, 5rem);
     font-weight: 900;
     color: var(--title-primary-color);
     @include media(large) {
       width: 97%;
     }
     @include media(extra-large) {
-      width: 96%;
+      width: 100%;
     }
     span {
       color: var(--title-secondary-color);
@@ -34,13 +34,12 @@
       justify-content: space-around;
       padding: 5rem 2.7rem;
       gap: 0;
-
     }
     @include media(large) {
       justify-content: space-evenly;
     }
     @include media(extra-large) {
-      padding: 6rem 24.7rem;
+      padding: 6rem 22.7rem;
       justify-content: space-between;
       height: inherit;
     }
@@ -52,10 +51,15 @@
       width: 90%;
       @include media(small) {
         gap: 1.5rem;
-        width: 80%;
       }
       @include media(medium) {
         gap: 2rem;
+        width: 55%;
+      }
+      @include media(large) {
+        width: 50%;
+      }
+      @include media(extra-large) {
         width: 55%;
       }
       p {
@@ -75,10 +79,15 @@
   .social {
     justify-content: flex-start;
   }
+
   &-btn {
+    @include media(extra-small) {
+      flex-wrap: nowrap;
+      gap: 1.5rem;
+    }
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: flex-start;
     gap: 2rem;
     @include media(small) {
@@ -88,6 +97,11 @@
     }
     @include media(medium) {
       justify-content: flex-start;
+    }
+    a {
+      @include media(extra-small) {
+        min-width: 13.4rem;
+      }
     }
   }
   &-img {
@@ -101,10 +115,10 @@
       width: 35rem;
     }
     @include media(medium) {
-      width: 42rem;
+      width: 39rem;
     }
     @include media(extra-large) {
-      width: 56.8rem;
+      width: 51.8rem;
       height: auto;
     }
   }

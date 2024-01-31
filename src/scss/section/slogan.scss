@@ -22,23 +22,25 @@
     }
     @include media(medium) {
       max-width: none;
+      width: 100%;
+      flex-direction: row;
 
-      width: 90%;
     }
     @include media(large) {
       padding: 2.5rem 1.7rem;
-      flex-direction: row;
+      width: 90%;
 
     }
     @include media(extra-large) {
       padding: 2.5rem 0.7rem;
+      width: 100%;
     }
     &__txt {
       display: flex;
       flex-direction: column;
       gap: 2.6rem;
       @include media(small) {
-        max-width: 80%;
+        max-width: 100%;
       }
       @include media(medium) {
         text-align: left;
@@ -54,22 +56,23 @@
     }
     &__img {
       img {
+        height: auto;
+
         @include media(extra-small) {
           width: 26.1rem;
-          height: 14.6rem;
         }
         border-radius: 0.8rem;
         @include media(small) {
           width: 40rem;
-          height: 22.5rem;
         }
         @include media(medium) {
           width: 37.1rem;
-          height: auto;
         }
         @include media(medium) {
           width: 44.1rem;
-          height: 23.3rem;
+        }
+        @include media(extra-large) {
+          width: 50rem;
         }
       }
     }

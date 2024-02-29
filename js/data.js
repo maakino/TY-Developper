@@ -1,5 +1,5 @@
 const portfolio = [
-    {
+   /*  {
         title: "Maz Pronos",
         desc: "Maz Pronos est un site personnalisé qui fournit des conseils de pronostics sportifs pour aider les amateurs de sports à prendre des décisions éclairées. ",
         url_site: "https://mazpronos.com/",
@@ -19,7 +19,7 @@ const portfolio = [
         techno: "React / SASS / Git",
         type: "Voir le projet",
         tache: "Intégration / Design"
-    },
+    }, */
     {
         title: "Devis power",
         desc: "Devis Power est un site sur mesure où l'on peut créer et stocker des devis personnalisés en illimité, les transformer en factures et les imprimer en quelques clics.  ",

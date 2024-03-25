@@ -1,5 +1,5 @@
 const portfolio = [
-   /*  {
+    {
         title: "Maz Pronos",
         desc: "Maz Pronos est un site personnalisé qui fournit des conseils de pronostics sportifs pour aider les amateurs de sports à prendre des décisions éclairées. ",
         url_site: "https://mazpronos.com/",
@@ -10,6 +10,7 @@ const portfolio = [
         tache: "Intégration / Design"
 
     },
+     /*
     {
         title: "JCV Consult",
         desc: "JCV Consult est un site vitrine sur mesure qui présente une gamme de produits dans les catégories de l'énergie renouvelable et de la sécurité. ",
